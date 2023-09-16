@@ -1,0 +1,5 @@
+Serial working ok with cheksum validated and transmit trip status. 
+Display Ok.
+Display changes in 1 secs.
+Calibration mode included.
+Different errors are included.

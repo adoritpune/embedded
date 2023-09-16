@@ -1,0 +1,430 @@
+if(fooPID.controlReference < fooPID.measuredOutput)
+ {
+  if (PTPER < 4485)
+  {
+   PTPER = 4485;
+  }
+  else
+  {
+   PTPER = PTPER - 1;
+  }
+ }
+ else
+ {
+  if (PTPER > 12422)
+  {
+   PTPER = 12422;
+  }
+  else
+  {
+   PTPER = PTPER + 1;
+  }
+ }
+       
+#include "p30F2020.h"
+#include "dsp.h"
+#include "math.h"
+ 
+/* Configuration Bit Settings */
+_FOSCSEL(FRC_PLL)
+_FOSC(CSW_FSCM_OFF & FRC_HI_RANGE & OSC2_CLKO & HS_EC_DIS)
+_FWDT( FWDTEN_OFF & WINDIS_ON & WDTPRE_PR128 & WDTPOST_PS32768 )
+_FPOR(PWRT_128)
+_FGS( CODE_PROT_OFF & GWRP_OFF )
+_FBS(BSS_NO_FLASH)
+ 
+ 
+typedef signed int SFRAC16;
+ 
+#define Q15(X) ((X < 0.0) ? (int)(32768*(X) - 0.5) : (int)(32767*(X) + 0.5))
+ 
+#define MIN_FREQ 12422 // lowest frequency is 50kHz at 1.61nsec clock.
+ 
+unsigned int scaled_val;
+signed long int measured_output;
+extern float Fract2Float (fractional);
+void setup(void);
+ 
+ 
+// Constants used by the PID controller, since a MAC operation is used, the PID structure is changed
+SFRAC16 ControlDifference[3] __attribute__((__space__(xmemory), __aligned__(4)));
+SFRAC16 PIDCoefficients[3] __attribute__((__space__(ymemory), __aligned__(4)));
+ 
+SFRAC16 ControlOutput; // Output
+SFRAC16 ControlReference; // Desired value
+SFRAC16 ControlFeedback; // Actual value, that will generate the error
+ 
+/* Variable Declaration required for each PID controller in your application */
+/* Declare a PID Data Structure named, fooPID */
+tPID fooPID;
+/* The fooPID data structure contains a pointer to derived coefficients in X-space and */
+/* pointer to controler state (history) samples in Y-space. So declare variables for the */
+/* derived coefficients and the controller history samples */
+fractional abcCoefficient[3] __attribute__ ((section (".xbss, bss, xmemory")));
+fractional controlHistory[3] __attribute__ ((section (".ybss, bss, ymemory")));
+/* The abcCoefficients referenced by the fooPID data structure */
+/* are derived from the gain coefficients, Kp, Ki and Kd */
+/* So, declare Kp, Ki and Kd in an array */
+fractional kCoeffs[] = {0,0,0};
+ 
+ 
+void init_PWM(void)
+{
+ PTPER = 4485; /* PFM Period = 7.728 usec @ 20 MIPS for 129.4kHz */
+        /* 1.05nsec for Industrial and 1.61nsec for Extended */
+                             /* Refer to PWM section for more details */
+ 
+ /* Initialize PWM Generator 1 */
+ 
+ IOCON1bits.PENH = 1; /* PWM Module controls High output */
+ IOCON1bits.PENL = 1; /* PWM Module controls Low output */
+ IOCON1bits.POLH = 1; /* High Output Polarity is active LOW */
+ IOCON1bits.POLL = 1; /* Low Output Polarity is active LOW */
+ IOCON1bits.PMOD = 0; /* Complimentary output mode */
+ IOCON1bits.OVRENH = 0; /* High Output Override disabled */
+ IOCON1bits.OVRENL = 0; /* Low Output Override disabled */
+ 
+ TRGCON1bits.TRGDIV = 0; /* Trigger on every event */
+ TRGCON1bits.TRGSTRT = 0; /* Start the counting at the start */
+ 
+ TRIG1 = 200; /* Trigger event at 0.214 usec from
+                                    start of the PWM cycle */
+ 
+ PWMCON1bits.FLTSTAT = 0; /* Clear Fault Interrupt flag */
+ PWMCON1bits.CLSTAT = 0; /* Clear Current Limit Interrupt flag */
+ PWMCON1bits.TRGSTAT = 0; /* Clear PWM Trigger Interrupt flag */
+ PWMCON1bits.FLTIEN = 0; /* Disable Fault Interrupt */
+ PWMCON1bits.CLIEN = 0; /* Disable Current Limit Interrupt */
+ PWMCON1bits.TRGIEN = 0; /* Disable Trigger Interrupt */
+ PWMCON1bits.ITB = 0; /* Time base is read from PTMR */
+ PWMCON1bits.MDCS = 0; /* Duty cycle is read from PDC */
+ PWMCON1bits.DTC = 0; /* DTC=0: Postive dead time actively applied for all output modes */
+ PWMCON1bits.XPRES = 0; /* No extenal reset for PTMR */
+ PWMCON1bits.IUE = 0; /* Immediate update to PDC */
+ 
+ DTR1 = 160; /* Deadtime = DTR1*1.61nsec = 257.6nsec */
+ ALTDTR1 = 160; /* Deadtime = ALTDTR*1.61nsec = 257.6nsec */
+ 
+ PDC1 = 4255; /* Constant off time of 6.55us */
+ PHASE1 = 0; /* No phase shift */
+ 
+ /* Initialize PWM Generator 2 */
+ 
+ IOCON2bits.PENH = 1; /* PWM Module controls High output */
+ IOCON2bits.PENL = 1; /* PWM Module controls Low output */
+ IOCON2bits.POLH = 1; /* High Output Polarity is active LOW */
+ IOCON2bits.POLL = 1; /* Low Output Polarity is active LOW */
+ IOCON2bits.PMOD = 0; /* Complimentary output mode */
+ IOCON2bits.OVRENH = 0; /* High Output Override disabled */
+ IOCON2bits.OVRENL = 0; /* Low Output Override disabled */
+ 
+ TRGCON2bits.TRGDIV = 0; /* Trigger on every event */
+ TRGCON2bits.TRGSTRT = 0; /* Start the counting at the start */
+ 
+ TRIG2 = 200; /* Trigger event at 0.214 usec from
+                                start of the PWM cycle */
+ 
+ PWMCON2bits.FLTSTAT = 0; /* Clear Fault Interrupt flag */
+ PWMCON2bits.CLSTAT = 0; /* Clear Current Limit Interrupt flag */
+ PWMCON2bits.TRGSTAT = 0; /* Clear PWM Trigger Interrupt flag */
+ PWMCON2bits.FLTIEN = 0; /* Disable Fault Interrupt */
+ PWMCON2bits.CLIEN = 0; /* Disable Current Limit Interrupt */
+ PWMCON2bits.TRGIEN = 0; /* Disable Trigger Interrupt */
+ PWMCON2bits.ITB = 0; /* Time base is read from PTMR */
+ PWMCON2bits.MDCS = 0; /* Duty cycle is read from PDC */
+ PWMCON2bits.DTC = 0; /* DTC=0: Postive dead time actively applied for all output modes */
+ PWMCON2bits.XPRES = 0; /* No extenal reset for PTMR */
+ PWMCON2bits.IUE = 0; /* Immediate update to PDC */
+ 
+ DTR2 = 160; /* Deadtime = DTR1*1.61nsec = 257.6nsec */
+ ALTDTR2 = 160; /* Deadtime = ALTDTR*1.61nsec = 257.6nsec */
+ 
+ PDC2 = 4255; /* Constant off time of 6.55us */
+ PHASE2 = PTPER/2; /* Phase shift of half of the PWM period */
+ 
+ /* Intialize the ADC */
+ 
+ ADPCFG = 0xFFE8; /* AN0, AN1, AN2, and AN4 are analog inputs */
+ ADCONbits.ADCS = 5; /* Clock Divider is set up for Fadc/14 */
+ ADCONbits.FORM = 0; /* Output in Integer Format */
+ ADCONbits.SEQSAMP = 1; /* Sequential Sampling Enabled */
+ ADCONbits.ORDER = 0; /* Even channel first */
+ ADCPC0bits.TRGSRC0 = 0x4; /* Trigger conversion on PWM#1 Trigger for AN0 and AN1 */
+ 
+ ADCONbits.ADSIDL = 0; /* Operate in Idle Mode */
+ ADCONbits.EIE = 1; /* Enable Early Interrupt */
+ ADSTAT = 0; /* Clear the ADSTAT register */
+ ADCPC0bits.IRQEN0 = 1; /* Enable the interrupt for AN0 and AN1 */
+ ADCONbits.ADON = 1; /* Start the ADC module */
+ 
+ /* Set up the Interrupts */
+ 
+ IPC2bits.ADIP = 4; /* Set ADC Interrupt Priority */
+ IFS0bits.ADIF = 0; /* Clear AD Interrupt Flag */
+ IEC0bits.ADIE = 1; /* Enable the ADC Interrupt */
+ 
+ PTCON = 0x8000; /* Enable PWM Module */
+ 
+ while(1);
+}
+ 
+ 
+void __attribute__((interrupt, no_auto_psv)) _ADCInterrupt()
+{
+ IFS0bits.ADIF = 0; /* Clear ADC Interrupt Flag */
+ ADSTATbits.P0RDY = 0; /* Clear the ADSTAT bits */
+ 
+ fooPID.controlReference = Q15(ADCBUF1/1024.0); /* Set the Reference which is 0.8V from the VREF LDO */
+ 
+  fooPID.measuredOutput = Q15(ADCBUF0/1024.0); /* Scale measured output to fractional format. */
+ 
+  PID(&fooPID); /* Call the PID controller using the new measured input */
+ 
+  if( fooPID.controlOutput > Q15(0.0) )
+  {
+  scaled_val = __builtin_mulsu(fooPID.controlOutput, MIN_FREQ) >> 15;
+ }
+ else
+ {
+  scaled_val = 0;
+  }
+  if( scaled_val < 4485 )
+  {
+  scaled_val = 4485; /* see errata for min. duty cycle of 64 and dead time. Max Fsw = 139.514kHz */
+ }
+ 
+ PTPER = scaled_val;
+}
+ 
+ 
+int main(void)
+{
+ fooPID.abcCoefficients = &abcCoefficient[0]; //Set up pointer to derived coefficients */
+ fooPID.controlHistory = &controlHistory[0]; //Set up pointer to controller history samples */
+ PIDInit(&fooPID); //Clear the controler history and the controller output */
+ 
+ kCoeffs[0] = Q15(0.4); // Kp + Ki + Kd must be < 0.99999
+ kCoeffs[1] = Q15(0.2); // Kp + 2*Kd must be < 1.000
+ kCoeffs[2] = Q15(0);
+ PIDCoeffCalc(&kCoeffs[0], &fooPID); //Derive the a,b, & c coefficients from the Kp, Ki & Kd */
+ 
+ init_PWM();
+ 
+   while(1);
+}
+RAW Paste Data
+
+if(fooPID.controlReference < fooPID.measuredOutput)
+ {
+  if (PTPER < 4485)
+  {
+   PTPER = 4485;
+  }
+  else
+  {
+   PTPER = PTPER - 1;
+  }
+ }
+ else
+ {
+  if (PTPER > 12422)
+  {
+   PTPER = 12422;
+  }
+  else
+  {
+   PTPER = PTPER + 1;
+  }
+ }
+	
+#include "p30F2020.h"
+#include "dsp.h"
+#include "math.h"
+
+/* Configuration Bit Settings */
+_FOSCSEL(FRC_PLL)
+_FOSC(CSW_FSCM_OFF & FRC_HI_RANGE & OSC2_CLKO & HS_EC_DIS)
+_FWDT( FWDTEN_OFF & WINDIS_ON & WDTPRE_PR128 & WDTPOST_PS32768 )
+_FPOR(PWRT_128)
+_FGS( CODE_PROT_OFF & GWRP_OFF )
+_FBS(BSS_NO_FLASH)
+
+
+typedef signed int SFRAC16;
+
+#define Q15(X) ((X < 0.0) ? (int)(32768*(X) - 0.5) : (int)(32767*(X) + 0.5))
+
+#define MIN_FREQ 12422 // lowest frequency is 50kHz at 1.61nsec clock.
+
+unsigned int scaled_val;
+signed long int measured_output;
+extern float Fract2Float (fractional);
+void setup(void);
+
+
+// Constants used by the PID controller, since a MAC operation is used, the PID structure is changed
+SFRAC16 ControlDifference[3] __attribute__((__space__(xmemory), __aligned__(4)));
+SFRAC16 PIDCoefficients[3] __attribute__((__space__(ymemory), __aligned__(4)));
+
+SFRAC16 ControlOutput; // Output
+SFRAC16 ControlReference; // Desired value
+SFRAC16 ControlFeedback; // Actual value, that will generate the error
+
+/* Variable Declaration required for each PID controller in your application */
+/* Declare a PID Data Structure named, fooPID */
+tPID fooPID;
+/* The fooPID data structure contains a pointer to derived coefficients in X-space and */
+/* pointer to controler state (history) samples in Y-space. So declare variables for the */
+/* derived coefficients and the controller history samples */
+fractional abcCoefficient[3] __attribute__ ((section (".xbss, bss, xmemory")));
+fractional controlHistory[3] __attribute__ ((section (".ybss, bss, ymemory")));
+/* The abcCoefficients referenced by the fooPID data structure */
+/* are derived from the gain coefficients, Kp, Ki and Kd */
+/* So, declare Kp, Ki and Kd in an array */
+fractional kCoeffs[] = {0,0,0};
+
+
+void init_PWM(void)
+{
+ PTPER = 4485; /* PFM Period = 7.728 usec @ 20 MIPS for 129.4kHz */
+        /* 1.05nsec for Industrial and 1.61nsec for Extended */
+                             /* Refer to PWM section for more details */ 
+
+ /* Initialize PWM Generator 1 */
+
+ IOCON1bits.PENH = 1; /* PWM Module controls High output */
+ IOCON1bits.PENL = 1; /* PWM Module controls Low output */
+ IOCON1bits.POLH = 1; /* High Output Polarity is active LOW */
+ IOCON1bits.POLL = 1; /* Low Output Polarity is active LOW */
+ IOCON1bits.PMOD = 0; /* Complimentary output mode */
+ IOCON1bits.OVRENH = 0; /* High Output Override disabled */
+ IOCON1bits.OVRENL = 0; /* Low Output Override disabled */
+
+ TRGCON1bits.TRGDIV = 0; /* Trigger on every event */
+ TRGCON1bits.TRGSTRT = 0; /* Start the counting at the start */
+
+ TRIG1 = 200; /* Trigger event at 0.214 usec from
+                                    start of the PWM cycle */
+
+ PWMCON1bits.FLTSTAT = 0; /* Clear Fault Interrupt flag */
+ PWMCON1bits.CLSTAT = 0; /* Clear Current Limit Interrupt flag */
+ PWMCON1bits.TRGSTAT = 0; /* Clear PWM Trigger Interrupt flag */
+ PWMCON1bits.FLTIEN = 0; /* Disable Fault Interrupt */
+ PWMCON1bits.CLIEN = 0; /* Disable Current Limit Interrupt */
+ PWMCON1bits.TRGIEN = 0; /* Disable Trigger Interrupt */
+ PWMCON1bits.ITB = 0; /* Time base is read from PTMR */
+ PWMCON1bits.MDCS = 0; /* Duty cycle is read from PDC */
+ PWMCON1bits.DTC = 0; /* DTC=0: Postive dead time actively applied for all output modes */
+ PWMCON1bits.XPRES = 0; /* No extenal reset for PTMR */
+ PWMCON1bits.IUE = 0; /* Immediate update to PDC */
+
+ DTR1 = 160; /* Deadtime = DTR1*1.61nsec = 257.6nsec */
+ ALTDTR1 = 160; /* Deadtime = ALTDTR*1.61nsec = 257.6nsec */
+
+ PDC1 = 4255; /* Constant off time of 6.55us */
+ PHASE1 = 0; /* No phase shift */
+
+ /* Initialize PWM Generator 2 */
+
+ IOCON2bits.PENH = 1; /* PWM Module controls High output */
+ IOCON2bits.PENL = 1; /* PWM Module controls Low output */
+ IOCON2bits.POLH = 1; /* High Output Polarity is active LOW */
+ IOCON2bits.POLL = 1; /* Low Output Polarity is active LOW */
+ IOCON2bits.PMOD = 0; /* Complimentary output mode */
+ IOCON2bits.OVRENH = 0; /* High Output Override disabled */
+ IOCON2bits.OVRENL = 0; /* Low Output Override disabled */
+
+ TRGCON2bits.TRGDIV = 0; /* Trigger on every event */
+ TRGCON2bits.TRGSTRT = 0; /* Start the counting at the start */
+
+ TRIG2 = 200; /* Trigger event at 0.214 usec from
+                                start of the PWM cycle */
+
+ PWMCON2bits.FLTSTAT = 0; /* Clear Fault Interrupt flag */
+ PWMCON2bits.CLSTAT = 0; /* Clear Current Limit Interrupt flag */
+ PWMCON2bits.TRGSTAT = 0; /* Clear PWM Trigger Interrupt flag */
+ PWMCON2bits.FLTIEN = 0; /* Disable Fault Interrupt */
+ PWMCON2bits.CLIEN = 0; /* Disable Current Limit Interrupt */
+ PWMCON2bits.TRGIEN = 0; /* Disable Trigger Interrupt */
+ PWMCON2bits.ITB = 0; /* Time base is read from PTMR */
+ PWMCON2bits.MDCS = 0; /* Duty cycle is read from PDC */
+ PWMCON2bits.DTC = 0; /* DTC=0: Postive dead time actively applied for all output modes */
+ PWMCON2bits.XPRES = 0; /* No extenal reset for PTMR */
+ PWMCON2bits.IUE = 0; /* Immediate update to PDC */
+
+ DTR2 = 160; /* Deadtime = DTR1*1.61nsec = 257.6nsec */
+ ALTDTR2 = 160; /* Deadtime = ALTDTR*1.61nsec = 257.6nsec */
+
+ PDC2 = 4255; /* Constant off time of 6.55us */
+ PHASE2 = PTPER/2; /* Phase shift of half of the PWM period */
+
+ /* Intialize the ADC */
+
+ ADPCFG = 0xFFE8; /* AN0, AN1, AN2, and AN4 are analog inputs */
+ ADCONbits.ADCS = 5; /* Clock Divider is set up for Fadc/14 */
+ ADCONbits.FORM = 0; /* Output in Integer Format */ 
+ ADCONbits.SEQSAMP = 1; /* Sequential Sampling Enabled */
+ ADCONbits.ORDER = 0; /* Even channel first */
+ ADCPC0bits.TRGSRC0 = 0x4; /* Trigger conversion on PWM#1 Trigger for AN0 and AN1 */
+
+ ADCONbits.ADSIDL = 0; /* Operate in Idle Mode */
+ ADCONbits.EIE = 1; /* Enable Early Interrupt */
+ ADSTAT = 0; /* Clear the ADSTAT register */
+ ADCPC0bits.IRQEN0 = 1; /* Enable the interrupt for AN0 and AN1 */
+ ADCONbits.ADON = 1; /* Start the ADC module */ 
+
+ /* Set up the Interrupts */
+
+ IPC2bits.ADIP = 4; /* Set ADC Interrupt Priority */
+ IFS0bits.ADIF = 0; /* Clear AD Interrupt Flag */
+ IEC0bits.ADIE = 1; /* Enable the ADC Interrupt */
+
+ PTCON = 0x8000; /* Enable PWM Module */
+
+ while(1);
+}
+
+
+void __attribute__((interrupt, no_auto_psv)) _ADCInterrupt()
+{
+ IFS0bits.ADIF = 0; /* Clear ADC Interrupt Flag */
+ ADSTATbits.P0RDY = 0; /* Clear the ADSTAT bits */
+
+ fooPID.controlReference = Q15(ADCBUF1/1024.0); /* Set the Reference which is 0.8V from the VREF LDO */
+
+  fooPID.measuredOutput = Q15(ADCBUF0/1024.0); /* Scale measured output to fractional format. */
+
+  PID(&fooPID); /* Call the PID controller using the new measured input */
+
+  if( fooPID.controlOutput > Q15(0.0) )
+  {
+  scaled_val = __builtin_mulsu(fooPID.controlOutput, MIN_FREQ) >> 15;
+ }
+ else
+ {
+  scaled_val = 0;
+  }
+  if( scaled_val < 4485 )
+  { 
+  scaled_val = 4485; /* see errata for min. duty cycle of 64 and dead time. Max Fsw = 139.514kHz */
+ } 
+
+ PTPER = scaled_val;
+} 
+
+
+int main(void)
+{
+ fooPID.abcCoefficients = &abcCoefficient[0]; //Set up pointer to derived coefficients */
+ fooPID.controlHistory = &controlHistory[0]; //Set up pointer to controller history samples */
+ PIDInit(&fooPID); //Clear the controler history and the controller output */
+
+ kCoeffs[0] = Q15(0.4); // Kp + Ki + Kd must be < 0.99999
+ kCoeffs[1] = Q15(0.2); // Kp + 2*Kd must be < 1.000
+ kCoeffs[2] = Q15(0);
+ PIDCoeffCalc(&kCoeffs[0], &fooPID); //Derive the a,b, & c coefficients from the Kp, Ki & Kd */
+
+ init_PWM();
+
+   while(1);
+}

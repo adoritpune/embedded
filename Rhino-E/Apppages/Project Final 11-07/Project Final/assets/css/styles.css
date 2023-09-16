@@ -1,0 +1,106 @@
+
+
+/*----------------------------
+	Color Bars
+-----------------------------*/
+
+#bars{
+	height: 150px;
+	margin: 0 auto;
+	position: relative;
+	width: 180px;
+}
+
+#control{
+	width:90px;
+	height:90px;
+	position:absolute;
+	top:40%;
+	left:36%;
+	margin:-22px 0 0 -22px;
+}
+
+
+
+
+#bars1{
+	height: 150px;
+	margin: 0 auto;
+	position: relative;
+	width: 180px;
+}
+
+#control1{
+	width:90px;
+	height:90px;
+	position:absolute;
+	top:50%;
+	left:40%;
+	margin:-45px 0 0 -45px;
+}
+
+#bars2{
+	height: 150px;
+	margin: 0 auto;
+	position: relative;
+	width: 180px;
+}
+
+#control2{
+	width:90px;
+	height:90px;
+	position:absolute;
+	top:50%;
+	left:40%;
+	margin:-45px 0 0 -45px;
+}
+
+
+.colorBar{
+	width:20px;
+	height:8px;
+    opacity:0;
+	position:absolute;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-o-transition:0.3s;
+	transition:0.3s;
+	margin:-20px -40px -40px -20px;
+}
+
+.colorBar.active{
+	opacity:1;
+}
+
+
+.colorBar1{
+	width:20px;
+	height:8px;
+    opacity:0;
+	position:absolute;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-o-transition:0.3s;
+	transition:0.3s;
+	margin:-30px -40px -40px -40px;
+}
+
+.colorBar1.active{
+	opacity:1;
+}
+
+.colorBar2{
+	width:20px;
+	height:8px;
+    opacity:0;
+	position:absolute;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-o-transition:0.3s;
+	transition:0.3s;
+	margin:-30px -40px -40px -40px;
+}
+
+.colorBar2.active{
+	opacity:1;
+}

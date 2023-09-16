@@ -1,0 +1,36 @@
+[PROJECT]
+Target=SW1.01.001.0093_SOFTWARE FOR RHINO D K3 500 PA79-557_B_REV 1.0.HEX
+Development_Mode=2
+Processor=0x877F
+ToolSuite=CCS
+Processor_Text=PIC16F886
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=D:\Rahul -\ED\Rhino D K3 500\DPM PA79-557-B_R2 (500 Rhino D) -K3 (HS)\SW1.01.001.0093_SOFTWARE FOR RHINO D K3 500 PA79-557_B_REV 1.0.c
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[SW1.01.001.0093_SOFTWARE FOR RHINO D K3 500 PA79-557_B_REV 1.0.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=SW1.01.001.0093_SOFTWARE FOR RHINO D K3 500 PA79-557_B_REV 1.0.c
+
+[Windows]
+0=0000 SW1.01.001.0093_SOFTWARE FOR RHINO D K3 500 PA79-557_B_REV 1.0.c 0 0 796 451 3 0
+
+[Units]
+Count=1
+1=SW1.01.001.0093_SOFTWARE FOR RHINO D K3 500 PA79-557_B_REV 1.0.c (main)

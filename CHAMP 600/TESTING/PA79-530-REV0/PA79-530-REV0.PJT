@@ -1,0 +1,37 @@
+[PROJECT]
+Target=PA79-530-REV0.HEX
+Development_Mode=2
+Processor=0x877F
+ToolSuite=CCS
+Processor_Text=PIC16F883
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=D:\PRIYANKA\PROJECT\DPM\current&ref\PA79-530-REV0.c
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[PA79-530-REV0.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=PA79-5~1.C
+
+[Windows]
+0=0000 PA79-5~1.C 0 0 796 451 3 0
+
+[Units]
+Count=1
+1=PA79-530-REV0.c (main)
+Link=0

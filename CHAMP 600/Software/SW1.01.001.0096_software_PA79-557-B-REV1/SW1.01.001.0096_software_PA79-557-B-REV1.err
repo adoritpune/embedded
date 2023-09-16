@@ -1,0 +1,6 @@
+>>> Warning 203 "SW1.01.001.0096_software_PA79-557-B-REV1.c" Line 89(1,1): Condition always TRUE
+>>> Warning 202 "D:\Bhushan Joshi\CHAMP 600\SW1.01.001.0096_software_PA79-557-B-REV1\variable.c" Line 36(81,88): Variable never used:   prevoff
+>>> Warning 202 "D:\Bhushan Joshi\CHAMP 600\SW1.01.001.0096_software_PA79-557-B-REV1\variable.c" Line 37(60,68): Variable never used:   blinkcnt
+>>> Warning 202 "D:\Bhushan Joshi\CHAMP 600\SW1.01.001.0096_software_PA79-557-B-REV1\variable.c" Line 39(32,39): Variable never used:   offset1
+      Memory usage:   ROM=55%      RAM=62% - 68%
+      0 Errors,  4 Warnings.

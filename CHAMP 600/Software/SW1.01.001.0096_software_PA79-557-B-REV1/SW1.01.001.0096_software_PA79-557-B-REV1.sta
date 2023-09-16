@@ -1,0 +1,109 @@
+
+ROM used: 4517 (55%)
+          5216 (64%) including unused fragments
+
+          3 Average locations per line
+          7 Average locations per statement
+
+RAM used: 170 (62%) at main() level
+          186 (68%) worst case
+
+Stack used: 4 worst case (out of 6 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+ 1109   621  92  SW1.01.001.0096_software_PA79-557-B-REV1.c
+   19     0   0  curandref.h
+  307     0   0  16F886.h
+   74     0   0  controller.c
+  151     0   0  variable.c
+  128    53   8  interrupt.c
+    4     0   0  display.c
+----- -----
+ 1792   674 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   0   1             @delay_ms2
+0     44   1   0             @const204
+0     44   1   0             @const206
+0    504  11   0  1249  5.4  timer1_isr
+2   1120  25   2 10873  9.0  MAIN
+0     29   1   4             @DTOF
+0    227   5  14             @DIVFF
+0     37   1   5             @FTOSD
+1    149   3   2   559  5.3  inttochar1
+1     43   1   5             @DIV1616
+0     57   1   2   249  4.0  inttochar2
+0     23   1   3             @DIV88
+1     83   2   2   237  3.2  inttochar
+0     45   1   0   245  1.8  initialise
+0     16   0   0    78  1.6  adc_init
+ Inline        0  4609  5.0  display
+0     94   2   0    78  1.6  write_memory
+0     63   1   0   354  3.7  read_memory
+1   1103  24   4  3956  9.5  readadc
+0     31   1   2             @ITOF
+0     33   1   4             @SFTOI
+0    105   2  10             @FLT
+0     67   1  13             @MUL3232
+0     74   2  13             @DIV3232
+0    159   4  13             @MULFF
+0    103   2   2   813  4.8  readswitch
+0      7   0   0    57  2.5  debounce
+0    184   4   0  2275  3.9  dispmodel
+
+Program metrics:
+    Functions               14
+    Statements              674
+    Comments                654
+    Volume (V)              34840
+    Difficilty (D)          62.8
+    Effort to implement (E) 2187894
+    Time to implement (T)   33 hours, 46 minutes
+    Est Delivered Bugs (B)  6
+    Cyclomatic Complexity   86
+    Maintainability (MI)    20
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00034    49  0  
+00035-007FF  1966  29  
+00800-00FFF  1378  670  
+01000-017FF  1120  928  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms2
+     0     1     0     0     0    @const204
+     0     1     0     0     0    @const206
+    11    80   114    78    12    timer1_isr
+    18   548   644   545    27    MAIN
+     0     1     0     0     0    @DTOF
+     0     1     0     0     0    @DIVFF
+     0     1     0     0     0    @FTOSD
+    11    48    49    46     1    inttochar1
+     0     1     0     0     0    @DIV1616
+     8    26    23    26     0    inttochar2
+     0     1     0     0     0    @DIV88
+     7    26    23    24     0    inttochar
+     4    26    26    24     0    initialise
+     4    11    11     9     0    adc_init
+    10   267   303   265    11    display
+     4    11    11     9     0    write_memory
+     8    29    41    27     3    read_memory
+    19   222   279   221    14    readadc
+     0     1     0     0     0    @ITOF
+     0     1     0     0     0    @SFTOI
+     0     1     0     0     0    @FLT
+     0     1     0     0     0    @MUL3232
+     0     1     0     0     0    @DIV3232
+     0     1     0     0     0    @MULFF
+    10    55    82    53     9    readswitch
+     7     7    10     5     1    debounce
+     8   146   169   144     8    dispmodel

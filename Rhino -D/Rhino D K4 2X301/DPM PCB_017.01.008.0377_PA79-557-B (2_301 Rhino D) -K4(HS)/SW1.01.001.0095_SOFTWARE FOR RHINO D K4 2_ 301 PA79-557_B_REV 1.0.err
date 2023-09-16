@@ -1,0 +1,5 @@
+>>> Warning 203 "SW1.01.001.0095_SOFTWARE FOR RHINO D K4 2_ 301 PA79-557_B_REV 1.0.c" Line 92(1,1): Condition always TRUE
+>>> Warning 202 "D:\Rahul -\ED\Rhino D K4 2_301\DPM PA79-557-B_R2 (2_301 Rhino D) -K4(HS)\variable.c" Line 42(34,43): Variable never used:   ucSetCurr
+>>> Warning 202 "D:\Rahul -\ED\Rhino D K4 2_301\DPM PA79-557-B_R2 (2_301 Rhino D) -K4(HS)\variable.c" Line 42(46,49): Variable never used:   Err
+      Memory usage:   ROM=34%      RAM=45% - 51%
+      0 Errors,  3 Warnings.

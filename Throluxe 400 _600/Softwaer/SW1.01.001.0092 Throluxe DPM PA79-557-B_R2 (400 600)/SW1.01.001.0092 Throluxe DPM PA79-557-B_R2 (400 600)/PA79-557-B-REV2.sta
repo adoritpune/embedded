@@ -1,0 +1,103 @@
+
+ROM used: 5249 (64%)
+          5534 (68%) including unused fragments
+
+          4 Average locations per line
+          13 Average locations per statement
+
+RAM used: 114 (42%) at main() level
+          138 (51%) worst case
+
+Stack used: 4 worst case (out of 6 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  619   404  97  PA79-557-B-REV2.c
+   19     0   0  curandref.h
+  307     0   0  C:\Users\rr03\Desktop\PICC\devices\16F886.h
+   74     0   0  controller.c
+  154     0   0  variable.c
+   44    12   3  interrupt.c
+    4     0   0  display.c
+----- -----
+ 1221   416 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   0   1             @delay_ms2
+0     44   1   0             @const172
+0     44   1   0             @const174
+0    424   8   0   282  3.7  timer1_isr
+2    489   9   2  2464  5.9  MAIN
+0     29   1   4             @DTOF
+0    204   4  14             @DIVFF
+0     33   1   5             @FTOSD
+0    149   3   2   559  5.3  inttochar1
+0     39   1   5             @DIV1616
+0     83   2   2   237  3.2  inttochar
+0     45   1   0   245  1.8  initialise
+0     16   0   0    50  1.5  adc_init
+ Inline        0  4609  5.0  display
+1    590  11   4  1595  7.4  readadc
+0     46   1  13             @MUL3232
+0     70   1  13             @DIV3232
+0     67   1  10             @FLT
+0     33   1   2             @ITOF
+0    119   2  13             @MULFF
+0    103   2   2   813  4.8  readswitch
+0    193   4   0  2345  3.9  dispmodel
+1   1081  21  12  1243  6.7  SetCurrentCal_600
+1    326   6  16             @ADDFF
+2    949  18  12  1046  6.7  SetCurrentCal_400
+
+Program metrics:
+    Functions               12
+    Statements              416
+    Comments                367
+    Volume (V)              22400
+    Difficilty (D)          56.3
+    Effort to implement (E) 1260575
+    Time to implement (T)   19 hours, 27 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   61
+    Maintainability (MI)    111
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00034    49  0  
+00035-007FF  1761  234  
+00800-00FFF  1997  51  
+01000-017FF  1438  610  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms2
+     0     1     0     0     0    @const172
+     0     1     0     0     0    @const174
+     8    27    30    25     2    timer1_isr
+    12   157   179   154    10    MAIN
+     0     1     0     0     0    @DTOF
+     0     1     0     0     0    @DIVFF
+     0     1     0     0     0    @FTOSD
+    11    48    49    46     1    inttochar1
+     0     1     0     0     0    @DIV1616
+     7    26    23    24     0    inttochar
+     4    26    26    24     0    initialise
+     4     8     8     6     0    adc_init
+    10   267   303   265    11    display
+    15   105   127   104     5    readadc
+     0     1     0     0     0    @MUL3232
+     0     1     0     0     0    @DIV3232
+     0     1     0     0     0    @FLT
+     0     1     0     0     0    @ITOF
+     0     1     0     0     0    @MULFF
+    10    55    82    53     9    readswitch
+     8   150   173   148     8    dispmodel
+    14    77   117    74     8    SetCurrentCal_600
+     0     1     0     0     0    @ADDFF
+    14    67   101    64     7    SetCurrentCal_400

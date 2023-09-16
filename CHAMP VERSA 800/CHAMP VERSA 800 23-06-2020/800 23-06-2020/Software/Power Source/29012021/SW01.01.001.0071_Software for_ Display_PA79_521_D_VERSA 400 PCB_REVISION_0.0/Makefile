@@ -1,0 +1,23 @@
+# MPLAB IDE generated this makefile for use with GNU make.
+# Project: Display pcb.mcp
+# Date: Fri May 08 15:25:42 2015
+
+AS = pic30-as.exe
+CC = pic30-gcc.exe
+LD = pic30-ld.exe
+AR = pic30-ar.exe
+HX = pic30-bin2hex.exe
+RM = rm
+
+Display\ pcb.hex : Display\ pcb.cof
+	$(HX) "Display pcb.cof"
+
+Display\ pcb.cof : main.o
+	$(CC) -mcpu=30F5011 "main.o" -o"Display pcb.cof" -Wl,-L"C:\Program Files\Microchip\MPLAB C30\lib",-Tp30F5011.gld,--defsym=__MPLAB_BUILD=1,-Map="Display pcb.map",--report-mem
+
+main.o : eeprom.c MIG.c SAW.c MMA.c isr.c encoder.c display.c function.c variable.c define.c c:/program\ files\ (x86)/microchip/mplab\ c30/include/float.h c:/program\ files\ (x86)/microchip/mplab\ c30/include/math.h c:/program\ files\ (x86)/microchip/mplab\ c30/include/stddef.h c:/program\ files\ (x86)/microchip/mplab\ c30/include/stdlib.h c:/program\ files\ (x86)/microchip/mplab\ c30/support/generic/h/dsp.h c:/program\ files\ (x86)/microchip/mplab\ c30/include/math.h p30f5011.h main.c
+	$(CC) -mcpu=30F5011 -x c -c "main.c" -o"main.o" -g -Wall
+
+clean : 
+	$(RM) "main.o" "Display pcb.cof" "Display pcb.hex"
+

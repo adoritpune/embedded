@@ -1,0 +1,36 @@
+[PROJECT]
+Target=Sw1.01.001.0097_smartgen200_ PA79-557_B_REV 1.0.HEX
+Development_Mode=2
+Processor=0x877F
+ToolSuite=CCS
+Processor_Text=PIC16F886
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=Sw1.01.001.0097_smartgen200_ PA79-557_B_REV 1.0.c;
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[Sw1.01.001.0097_smartgen200_ PA79-557_B_REV 1.0.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=SW1010~1.C
+
+[Windows]
+0=0000 SW1010~1.C 0 0 796 451 3 0
+
+[Units]
+Count=1
+1=Sw1.01.001.0097_smartgen200_ PA79-557_B_REV 1.0.c (main)

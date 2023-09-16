@@ -1,0 +1,97 @@
+
+ROM used: 2808 (34%)
+          3043 (37%) including unused fragments
+
+          2 Average locations per line
+          6 Average locations per statement
+
+RAM used: 122 (45%) at main() level
+          138 (51%) worst case
+
+Stack used: 4 worst case (out of 6 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  723   423  97  SW1.01.001.0095_SOFTWARE FOR RHINO D K4 2_ 301 PA79-557_B_REV 1.0.c
+   19     0   0  curandref.h
+  307     0   0  C:\Users\rr03\Desktop\PICC\devices\16F886.h
+   74     0   0  controller.c
+  156     0   0  variable.c
+   44    12   3  interrupt.c
+    4     0   0  display.c
+----- -----
+ 1327   435 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   1   1             @delay_ms2
+0     44   2   0             @const176
+0     44   2   0             @const178
+0    424  15   0   282  3.7  timer1_isr
+1    493  18   2  2296  6.4  MAIN
+0     29   1   4             @DTOF
+0    204   7  14             @DIVFF
+0     33   1   5             @FTOSD
+0    149   5   2   559  5.3  inttochar1
+0     39   1   5             @DIV1616
+0     83   3   2   237  3.2  inttochar
+0     45   2   0   245  1.8  initialise
+0     16   1   0    50  1.5  adc_init
+ Inline        0  4609  5.0  display
+1    502  18   4  1473  7.4  readadc
+0     46   2  13             @MUL3232
+0     70   2  13             @DIV3232
+0     67   2  10             @FLT
+0     33   1   2             @ITOF
+0    121   4  13             @MULFF
+0    103   4   2   813  4.8  readswitch
+0    190   7   0  2345  3.9  dispmodel
+
+Program metrics:
+    Functions               10
+    Statements              435
+    Comments                441
+    Volume (V)              17956
+    Difficilty (D)          43.3
+    Effort to implement (E) 778220
+    Time to implement (T)   12 hours, 1 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   42
+    Maintainability (MI)    32
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00034    49  0  
+00035-007FF  1760  235  
+00800-00FFF   995  1053  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms2
+     0     1     0     0     0    @const176
+     0     1     0     0     0    @const178
+     8    27    30    25     2    timer1_isr
+    13   151   164   148     6    MAIN
+     0     1     0     0     0    @DTOF
+     0     1     0     0     0    @DIVFF
+     0     1     0     0     0    @FTOSD
+    11    48    49    46     1    inttochar1
+     0     1     0     0     0    @DIV1616
+     7    26    23    24     0    inttochar
+     4    26    26    24     0    initialise
+     4     8     8     6     0    adc_init
+    10   267   303   265    11    display
+    15    98   119    97     5    readadc
+     0     1     0     0     0    @MUL3232
+     0     1     0     0     0    @DIV3232
+     0     1     0     0     0    @FLT
+     0     1     0     0     0    @ITOF
+     0     1     0     0     0    @MULFF
+    10    55    82    53     9    readswitch
+     8   150   173   148     8    dispmodel

@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADC_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	637;"	f	line:637	signature:(void)
+ADC_Reference	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	1230;"	f	line:1230	signature:(void)
+BORV_27	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	38;"	v	line:38
+CODE_PROT_ON	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	37;"	v	line:37
+Detect_error	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	922;"	f	line:922	signature:(void)
+FRC_PLL16	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	35;"	v	line:35
+INT12_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	816;"	f	line:816	signature:(void)
+PORTPIN_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	742;"	f	line:742
+PWM_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	621;"	f	line:621	signature:(void)
+SPI_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	541;"	f	line:541	signature:(void)
+SYSTEM_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	526;"	f	line:526
+TIMER1_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	565;"	f	line:565	signature:(void)
+TIMER3_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	589;"	f	line:589	signature:(void)
+TIMER4_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	600;"	f	line:600	signature:(void)
+TIMER5_INIT	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	610;"	f	line:610	signature:(void)
+WDT_OFF	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	36;"	v	line:36
+delay_mig_torch	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	518;"	f	line:518
+i	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	520;"	l	line:520
+main	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	40;"	f	line:40
+model_selection	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	1675;"	f	line:1675	signature:(void)
+trip1_detection	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	901;"	f	line:901	signature:(unsigned int errvtg)
+trip_detection	D:\Bhushan Joshi\Champ MIG CCCV\SW1.01.001.0068_Software for_Display_PA79_581_C_VERSA 400 PCB_REVISION_2.0\MAIN.C	832;"	f	line:832	signature:(unsigned int looperrorvtg)

@@ -1,0 +1,4 @@
+>>> Warning 203 "SW1.01.001.0094_SOFTWARE FOR RHINO D K4 500 PA79-557_B_REV 2.0.c" Line 91(1,1): Condition always TRUE
+>>> Warning 202 "D:\Rahul -\ED\Rhino D K4 500\DPM PA79-557-B_R2 (500 Rhino D) -K4 (HS)\variable.c" Line 42(46,49): Variable never used:   Err
+      Memory usage:   ROM=64%      RAM=45% - 54%
+      0 Errors,  2 Warnings.

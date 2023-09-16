@@ -1,0 +1,302 @@
+Comparing Y:\Projects\Akshay Nirgude Hand Over 2019\006 MIG MULTI MAESTERO ECO FOR OPTOCOUPLER RESISTOR\CHAMP 1200 MAESTRO 1200(I) CHAMP MULTI 1200\SOFTWARE\PA79-521-C-REV-4.0 Maestro with arcforce\MMA.C and \\awlnapdc1\TDC\TDC Document\handover\MAHESH PHARANDE HANDOVER JAN-2018\9. CHAMP-MAESTRO-MULTI- 1200\3. SOTWARE FOLDER\PA79-521-C-REV-3.0 Maestro with arcforce\MMA.C
+  void mma()
+  {
+  if(mma_flag==0)
+  {
+  TypeDP.DPGROUP[0]=0x00;
+  CURR[0]='M';
+  CURR[1]='M';
+  CURR[2]='A';
+  CURR[3]=91;
+  VOLT[0]='M';
+  VOLT[1]='O';
+  VOLT[2]='D';
+  VOLT[3]='E';
+  MMALEDLAT=1;            //MMA LED ON
+  SAWLEDLAT=0;            //SAW LED OFF
+  OCV_FLAGLAT=1;          //OCV ON
+  ARCONLAT=0;				//ARCON OUTPUT SIGNAL TO PWM PCB
+  CCCVLAT=1;				//CCCV MODE SELECTION IN PWM CARD
+  mma_flag=1;             //MMA ENTERED
+  saw_flag=0;             //SAW LEFT
+  mig_flag=0;
+  mma_init=0;
+  comm_flag=0;
+D <! hotf=1;
+  count_10ms=0;
+  count_100ms=0;
+  phsetvoltage=0;
+  phsetcurrent=0;
+  Disp_updatef=1;
+  memdata=EEPROM_Read(1*2);
+  if(memdata >= 1200)
+  memdata=1200;
+  setcurrent=memdata;
+  memdata=EEPROM_Read(3*2);
+  if(memdata >= 100)
+  memdata=100;
+  arcforce=memdata;
+  }
+D <! 
+  if((trip_flag==0)&&(imtrip_flag==0))          //IF TRIP OFF
+  {
+  MMALEDLAT=1;            //MMA LED ON
+  SAWLEDLAT=0;            //SAW LED OFF
+  OCV_FLAGLAT=1;          //OCV ON
+  ARCONLAT=0;				//ARCON OUTPUT SIGNAL TO PWM PCB
+  CCCVLAT=1;				//CCCV MODE SELECTION IN PWM CARD  cc mode
+D <! if((scalmode==0))				//WELDING IS OFF
+I !> if((weldon==0)&&(scalmode==0))				//WELDING IS OFF
+  {
+D <! // if(mma_init==1)         	//MMA INITIALISATION OVER
+I !> if(mma_init==1)         	//MMA INITIALISATION OVER
+  {
+  TypeDP.DPGROUP[0]=0x00;
+  
+D <! if(arcforcemodef==0 && dispcalmodef==0)  //@Display set current
+I !> if(arcforcemodef==0 && dispcalmodef==0)
+  {
+  Typedp.digitdp7	=1;
+D <! 
+D <! if(weldon==0)
+I !> if((psetcurrent!= setcurrent) || Disp_updatef==1)
+  {
+D <! if( ((psetcurrent!= setcurrent) || (Disp_updatef==1))   )
+D <! {
+D <! disp_hex_dec_curr(setcurrent);		//DISPLAY SET CURRENT
+I !> //PWMcount=213.5+(setcurrent*1.036);//modified for maestro 1200
+I !> //if(PWMcount >= 1470)
+I !> //PWMcount=1470;
+I !> PWMcount=427.0+(setcurrent*2.072);	//modified for maestro 1200
+I !> if(PWMcount >= 2940)
+I !> PWMcount=2940;
+I !> OC1RS= PWMcount;										//147.0+(setcurrent*1.5);//   (14.70 * setcurrent)/12.0;	            			//GENERATE REFERENCE
+I !> disp_hex_dec_curr(setcurrent);			      			//DISPLAY SET CURRENT
+  psetcurrent = setcurrent;
+  }
+D <! 
+D <! 
+  if(((pweldvoltage != weldvoltage)  && disp_flag==1) || Disp_updatef==1)
+  {
+D <! disp_hex_dec_volt(weldvoltage);	 //DISPLAY VOLTAGE
+I !> disp_hex_dec_volt(weldvoltage);		            			//DISPLAY VOLTAGE
+  pweldvoltage = weldvoltage;
+  }
+D <! 
+I !> cali_on=0;
+I !> Disp_updatef=0;
+  disp_flag=0;
+D <! Disp_updatef=0;
+D <! cali_on1=0;
+  }
+D <! 
+D <! 
+D <! }
+D <! else if(arcforcemodef==1 && dispcalmodef==0 && weldon==0) //@Display set Arcforce
+I !> else if(arcforcemodef==1 && dispcalmodef==0)
+  {
+  Typedp.digitdp7	=0;
+  CURR[0]='A';
+  CURR[1]='R';
+  CURR[2]='C';
+  CURR[3]='F';
+  disp_hex_dec_volt(arcforce);
+  }
+D <! else if(arcforcemodef==0  && dispcalmodef==1 && weldon==0)
+I !> else if(arcforcemodef==0  && dispcalmodef==1)
+  {
+  CURR[0]='C';
+  CURR[1]='A';
+  CURR[2]='L';
+  CURR[3]='/';
+  VOLT[0]='M';
+  VOLT[1]='O';
+  VOLT[2]='D';
+  VOLT[3]='E';
+  //disp_hex_dec_volt(arcforce);
+  }
+D <! 
+D <! }  //@ unused bracket
+D <! 
+D <! 
+D <! fweldvoltage=mma_weldvoltage;
+D <! farcforce=arcforce;
+D <! fsetcurrent=setcurrent;
+  
+D <! if(hotf==1)
+D <! {
+D <! 
+D <! if(fsetcurrent<550)
+D <! {
+D <! fnewcurrent=fsetcurrent+(fsetcurrent*HOTSTRT_PERCNT_1)/100.0;
+  }
+D <! else
+D <! {
+D <! fnewcurrent=fsetcurrent+100.0;
+I !> hotstartcount=0;
+I !> hotf=0;
+  }
+D <! NC1LAT =1;
+D <! 
+D <! }
+D <! else if(fweldvoltage<=600.0)
+D <! {
+D <! fnewcurrent=fsetcurrent+(fsetcurrent*((600.0-fweldvoltage)/600.0)*(farcforce/100.0));
+D <! NC1LAT =0;
+D <! }
+D <! else
+D <! {
+D <! fnewcurrent=fsetcurrent;
+D <! }
+D <! 
+D <! if(fnewcurrent>=1200.0)
+D <! fnewcurrent=1200.0;
+D <! 
+D <! PWMcount=427.0+(fnewcurrent*2.072);	//modified for maestro 1200
+D <! if(PWMcount >= 2940)
+D <! PWMcount=2940;
+D <! OC1RS= PWMcount;
+D <! 
+D <! if(weldon==1)
+D <! {
+D <! if((pdispweldcurrent != dispweldcurrent) && disp_flag==1  )  //AFTER EVERY 1 SEC
+I !> if((weldon==1)&&(scalmode==0))					                                    				//WELDING IS ON
+  {
+D <! disp_hex_dec_curr(dispweldcurrent);     //DISPLAY ARC CURRENT
+D <! pdispweldcurrent = dispweldcurrent;
+D <! }
+D <! 
+D <! if((pweldvoltage != weldvoltage) && disp_flag==1)  //AFTER EVERY 1 SEC
+D <! {
+D <! disp_hex_dec_volt(weldvoltage);      //weldvoltage //DISPLAY ARC VOLTAGE
+D <! pweldvoltage = weldvoltage;
+D <! }
+D <! 
+D <! disp_flag=0;
+D <! Disp_updatef=1;
+D <! }
+D <! 
+D <! }
+D <! if(0)//(weldon==1)&&(scalmode==0))					                                    				//WELDING IS ON
+D <! {
+  TypeDP.DPGROUP[0]=0x00;
+  Typedp.digitdp7		=1;
+  //if(psetcurrent!= setcurrent)
+  {
+D <! 
+D <! fweldvoltage=mma_weldvoltage;
+I !> fweldvoltage=weldvoltage;
+  farcforce=arcforce;
+  fsetcurrent=setcurrent;
+  if(fweldvoltage<=600.0)
+  fnewcurrent=fsetcurrent+(fsetcurrent*((600.0-fweldvoltage)/600.0)*(farcforce/100.0));
+  else
+  fnewcurrent=fsetcurrent;
+  
+  if(hotf==0)
+  {
+  fnewcurrent=fsetcurrent+100.0;
+  if(fnewcurrent>=1200.0)
+  fnewcurrent=1200.0;
+  hotstartcount++;
+  if(hotstartcount>=200)
+  {
+  hotf=1;
+  hotstartcount=0;
+  }
+  }
+  
+  newcurrent=fnewcurrent;
+  if(newcurrent>=1200)
+  newcurrent=1200;
+  //PWMcount=427.0+(setcurrent*2.072);	   //modified for maestro 1200
+  PWMcount=427.0+(newcurrent*2.072);	   //modified for maestro 1200
+  if(PWMcount >= 2940)
+  PWMcount=2940;
+  OC1RS= PWMcount;
+  psetcurrent = setcurrent;
+  }
+I !> 
+I !> 
+I !> 
+I !> 
+  
+  
+I !> 
+  if((pdispweldcurrent != dispweldcurrent) && disp_flag==1)  //AFTER EVERY 1 SEC
+  {
+  disp_hex_dec_curr(dispweldcurrent);     //DISPLAY ARC CURRENT
+  pdispweldcurrent = dispweldcurrent;
+  }
+D <! 
+  if((pweldvoltage != weldvoltage) && disp_flag==1)  //AFTER EVERY 1 SEC
+  {
+D <! disp_hex_dec_volt(mma_weldvoltage);      //weldvoltage //DISPLAY ARC VOLTAGE
+D <! pweldvoltage = mma_weldvoltage;
+I !> disp_hex_dec_volt(weldvoltage);      //DISPLAY ARC VOLTAGE
+I !> pweldvoltage = weldvoltage;
+  }
+  disp_flag=0;
+  Disp_updatef=1;
+  }
+  else if(scalmode==1)
+  {
+  TypeDP.DPGROUP[0]=0x00;
+  Typedp.digitdp7	=0;
+  if(psetcurrent!= setcurrent)
+  {
+  
+  PWMcount=427.0+(setcurrent*2.072);	   //modified for maestro 1200
+  if(PWMcount >= 2940)
+  PWMcount=2940;
+  OC1RS= PWMcount;
+  psetcurrent = setcurrent;
+  }
+  
+  
+  
+  if(shuntcal1f==1)
+  {
+  CURR[0]='C';
+  CURR[1]='A';
+  CURR[2]='L';
+  CURR[3]='1';
+  disp_hex_dec_volt(dispshfb1);
+  
+  }
+  if(shuntcal2f==1)
+  {
+  CURR[0]='C';
+  CURR[1]='A';
+  CURR[2]='L';
+  CURR[3]='2';
+  disp_hex_dec_volt(dispshfb2);
+  
+  }
+  disp_flag=1;
+  Disp_updatef=1;
+  
+  }
+  
+  }
+  else                                     	//MACHINE IN TRIP CONDITION
+  {
+  TypeDP.DPGROUP[0]=0x00;
+  OC1RS=0;                        	//REFERENCE ZERO
+  OCV_FLAGLAT=0;                     	//OCV ZERO
+  TRIPLEDLAT=1;                       //TRIP LED ON
+  }
+  
+  if(imtrip_flag==1)
+  {
+  TypeDP.DPGROUP[0]=0x00;
+  OC1RS=0;                        	//REFERENCE ZERO
+  OCV_FLAGLAT=0;                     	//OCV ZERO
+  TRIPLEDLAT=1;
+  while(imtrip_flag==1);
+  
+  }
+  
+  }
+  
+  

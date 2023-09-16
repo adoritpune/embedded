@@ -1,0 +1,67 @@
+
+ROM used: 929 (23%)
+          929 (23%) including unused fragments
+
+          2 Average locations per line
+          11 Average locations per statement
+
+RAM used: 41 (23%) at main() level
+          59 (34%) worst case
+
+Stack used: 3 worst case (out of 7 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  224    83 100  rev0.c
+   19     0   0  rev0.h
+  308     0   0  C:\Program Files\PICC\devices\16F883.h
+----- -----
+  551    83 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     16   2   0   123  3.0  timer1_isr
+0      4   0   0    22  1.2  timer2_isr
+0     53   6   0   316  1.9  initialize
+0    102  11   0   467  4.7  MAIN
+0    273  29   4  1039  8.6  readadc
+0     30   3   2             @ITOF
+0    118  13  13             @MULFF
+0    203  22  14             @DIVFF
+0     32   3   4             @SFTOI
+0     35   4   4   390  3.4  transmit
+
+Program metrics:
+    Functions               6
+    Statements              83
+    Comments                112
+    Volume (V)              3278
+    Difficilty (D)          23.0
+    Effort to implement (E) 75547
+    Time to implement (T)   1 hours, 10 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   15
+    Maintainability (MI)    115
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-0003E    59  0  
+0003F-007FF   866  1119  
+00800-00FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     7    14    16    12     1    timer1_isr
+     4     5     4     3     0    timer2_isr
+     4    37    24    35     0    initialize
+    10    35    52    33     5    MAIN
+    18    72    91    69     9    readadc
+     0     1     0     0     0    @ITOF
+     0     1     0     0     0    @MULFF
+     0     1     0     0     0    @DIVFF
+     0     1     0     0     0    @SFTOI
+     7    38    34    37     0    transmit

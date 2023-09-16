@@ -1,0 +1,12 @@
+>>> Warning 203 "PA79-530-REV0.c" Line 56(1,1): Condition always TRUE
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 22(37,43): Variable never used:   pinout
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 22(57,68): Variable never used:   readswitch1
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 22(76,79): Variable never used:   mma
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 22(82,88): Variable never used:   hibyte
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 22(91,98): Variable never used:   lowbyte
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 23(68,72): Variable never used:   band
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 24(34,41): Variable never used:   voltage
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 24(81,88): Variable never used:   prevoff
+>>> Warning 202 "D:\PRIYANKA\PROJECT\DPM\current&ref\variable.c" Line 24(91,98): Variable never used:   offset2
+      Memory usage:   ROM=53%      RAM=68% - 76%
+      0 Errors,  10 Warnings.

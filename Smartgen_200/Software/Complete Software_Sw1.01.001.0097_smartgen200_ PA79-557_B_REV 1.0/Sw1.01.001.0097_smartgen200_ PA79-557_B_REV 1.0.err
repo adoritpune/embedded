@@ -1,0 +1,4 @@
+>>> Warning 203 "Sw1.01.001.0097_smartgen200_ PA79-557_B_REV 1.0.c" Line 88(1,1): Condition always TRUE
+>>> Warning 202 "C:\Users\ak04\OneDrive - ADOR WELDING LIMITED\Desktop\smartgen200\smartgen_200\smartgen200REV_1\variable.c" Line 42(46,49): Variable never used:   Err
+      Memory usage:   ROM=68%      RAM=45% - 54%
+      0 Errors,  2 Warnings.
