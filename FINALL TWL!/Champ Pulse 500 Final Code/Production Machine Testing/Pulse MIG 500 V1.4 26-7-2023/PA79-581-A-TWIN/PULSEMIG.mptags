@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADC_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1461;"	f	line:1461	signature:(void)
+BORV_27	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	58;"	v	line:58
+BuffAddr	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	63;"	l	line:63
+CODE_PROT_ON	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	57;"	v	line:57
+Detect_error	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1775;"	f	line:1775	signature:(void)
+FRC_PLL16	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	55;"	v	line:55
+INT12_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1704;"	f	line:1704	signature:(void)
+LCD_mig_syn_data_write	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1835;"	f	line:1835
+LCD_pulsemig_syn_data_write	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1780;"	f	line:1780
+PORTPIN_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1545;"	f	line:1545
+PWM_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1430;"	f	line:1430	signature:(void)
+READ_PORTPIN	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1308;"	f	line:1308	signature:(void)
+SPI_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1350;"	f	line:1350	signature:(void)
+SYSTEM_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1275;"	f	line:1275
+Send_num	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1533;"	f	line:1533	signature:(unsigned int num)
+TIMER1_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1374;"	f	line:1374	signature:(void)
+TIMER2_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1385;"	f	line:1385	signature:(void)
+TIMER3_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1398;"	f	line:1398	signature:(void)
+TIMER4_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1409;"	f	line:1409	signature:(void)
+TIMER5_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1419;"	f	line:1419	signature:(void)
+TRANS1	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1502;"	f	line:1502	signature:(unsigned char data)
+TRANS2	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1527;"	f	line:1527	signature:(unsigned char data)
+TRANSNUM	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1508;"	f	line:1508	signature:(unsigned int num)
+UART1_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1493;"	f	line:1493
+UART2_INIT	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1517;"	f	line:1517
+WDT_OFF	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	56;"	v	line:56
+delay_pmig	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1092;"	f	line:1092
+display_Ldata	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1723;"	f	line:1723
+higher	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1510;"	l	line:1510
+higher	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1535;"	l	line:1535
+i	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1094;"	l	line:1094
+iData	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	62;"	l	line:62
+index	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1881;"	l	line:1881
+lower	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1510;"	l	line:1510
+lower	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1535;"	l	line:1535
+main	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	60;"	f	line:60
+send_string	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1879;"	f	line:1879	signature:(unsigned char data[])
+transmittowf	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1665;"	f	line:1665
+trip_detection	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1766;"	f	line:1766	signature:(unsigned int looperrorvtg)
+updatedata	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1184;"	f	line:1184	signature:(unsigned int operator1,unsigned int minimum,unsigned int maximum,unsigned char sign)
+updatedata1	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1247;"	f	line:1247	signature:(unsigned int operator1,unsigned int minimum,unsigned int maximum,unsigned char sign)
+updategcvparameter	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1126;"	f	line:1126	signature:(unsigned char encres3, unsigned char encres2)
+updatemccparameter	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1100;"	f	line:1100	signature:(unsigned char encres3, unsigned char encres2)
+updatemigparameter	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1172;"	f	line:1172	signature:(unsigned char encres1)
+updatepccparameter	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1155;"	f	line:1155	signature:(unsigned char encres3, unsigned char encres2)
+updatepmigparameter	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1176;"	f	line:1176	signature:(unsigned char encres1)
+updatetccparameter	D:\MAYURI KALE\Champ 500 AI\Pulse MIG 500 V1.4 26-7-2023\PA79-581-A-TWIN\MAIN.C	1117;"	f	line:1117	signature:(unsigned char encres3, unsigned char encres2)

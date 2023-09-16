@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+FRC_PLL16	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	19;"	v	line:19
+IOinit	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	569;"	f	line:569	signature:(void)
+PWRT_64	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	22;"	v	line:22
+Transmitt_string	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	798;"	f	line:798
+WDT_OFF	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	20;"	v	line:20
+detect_display_error	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	726;"	f	line:726	signature:(void)
+high	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	800;"	l	line:800
+key_application	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	597;"	f	line:597	signature:(unsigned char keypress)
+low	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	800;"	l	line:800
+main	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	24;"	f	line:24	signature:(void)
+systemInit	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	578;"	f	line:578	signature:(void)
+trancheksum	D:\CHAMP PULSE 500 BACKUPS\Champ Pulse 500 TWL\Updated Display Board Code 31-08-2023\Digital WireFeeder\17 PA79_603B_DT05_09_23\main.c	801;"	l	line:801

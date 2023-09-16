@@ -1,0 +1,2642 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+end_init CODE 0 4D1 4D1 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/default/production\PULSEWF.X.production.obj
+cinit CODE 0 4D3 4D3 83 2
+intentry CODE 0 4 4 4CD 2
+swtext1 CONST 0 1800 1800 C 2
+text45 CODE 0 556 556 143 2
+text44 CODE 0 198F 198F 29 2
+text43 CODE 0 1DEE 1DEE 82 2
+text42 CODE 0 1B66 1B66 60 2
+text41 CODE 0 1387 1387 F6 2
+text40 CODE 0 101F 101F A9 2
+text39 CODE 0 121F 121F B4 2
+text38 CODE 0 1EF2 1EF2 87 2
+text37 CODE 0 18D3 18D3 13 2
+text35 CODE 0 19E7 19E7 31 2
+text34 CODE 0 1E70 1E70 82 2
+text33 CODE 0 1BC6 1BC6 61 2
+text32 CODE 0 7BB 7BB 3D 2
+text31 CODE 0 839 839 F6 2
+text30 CODE 0 10C8 10C8 A9 2
+text29 CODE 0 1A18 1A18 3C 2
+text28 CODE 0 12D3 12D3 B4 2
+text27 CODE 0 187C 187C 9 2
+text26 CODE 0 1F79 1F79 87 2
+text25 CODE 0 1001 1001 1E 2
+text24 CODE 0 147D 147D 383 2
+text23 CODE 0 1967 1967 28 2
+text22 CODE 0 194E 194E 19 2
+text21 CODE 0 1B07 1B07 5F 2
+text20 CODE 0 1D6F 1D6F 7F 2
+text19 CODE 0 1AAA 1AAA 5D 2
+text18 CODE 0 1CF1 1CF1 7E 2
+text17 CODE 0 18B1 18B1 11 2
+text16 CODE 0 18F9 18F9 15 2
+text15 CODE 0 18C2 18C2 11 2
+text14 CODE 0 1171 1171 AE 2
+text13 CODE 0 802 802 37 2
+text12 CODE 0 19B8 19B8 2F 2
+text11 CODE 0 1C27 1C27 64 2
+text10 CODE 0 2 2 1 2
+text9 CODE 0 3 3 1 2
+text8 CODE 0 1C8B 1C8B 66 2
+text7 CODE 0 699 699 122 2
+text6 CODE 0 1938 1938 16 2
+text5 CODE 0 1885 1885 A 2
+text4 CODE 0 190E 190E 15 2
+text3 CODE 0 188F 188F A 2
+text2 CODE 0 1A54 1A54 56 2
+text1 CODE 0 18E6 18E6 13 2
+maintext CODE 0 92F 92F 6D1 2
+cstackBANK0 BANK0 1 20 20 34 1
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK1 BANK1 1 A0 A0 4F 1
+inittext CODE 0 1899 1899 C 2
+clrtext CODE 0 18A5 18A5 C 2
+bssBANK6 BANK6 1 320 320 49 1
+bssBANK5 BANK5 1 2A0 2A0 16 1
+dataBANK4 BANK4 1 25B 25B 6 1
+bssBANK4 BANK4 1 220 220 3B 1
+dataBANK3 BANK3 1 1DA 1DA 15 1
+bssBANK3 BANK3 1 1A0 1A0 3A 1
+dataBANK2 BANK2 1 16C 16C 4 1
+bssBANK2 BANK2 1 120 120 4C 1
+dataBANK1 BANK1 1 EF EF 1 1
+dataBANK0 BANK0 1 6F 6F 1 1
+bssBANK0 BANK0 1 54 54 1B 1
+stringtext STRCODE 0 2000 2000 6E 2
+idataBANK4 CODE 0 7F8 7F8 6 2
+idataBANK3 CODE 0 1923 1923 15 2
+idataBANK2 CODE 0 1878 1878 4 2
+idataBANK1 CODE 0 7FF 7FF 1 2
+idataBANK0 CODE 0 7FE 7FE 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK10 00520-0056F 1
+BANK11 005A0-005EF 1
+BANK12 00620-0066F 1
+BANK13 006A0-006EF 1
+BANK14 00720-0076F 1
+BANK15 007A0-007EF 1
+BANK16 00820-0086F 1
+BANK17 008A0-008EF 1
+BANK18 00920-0096F 1
+BANK19 009A0-009EF 1
+BANK20 00A20-00A6F 1
+BANK21 00AA0-00AEF 1
+BANK22 00B20-00B6F 1
+BANK23 00BA0-00BEF 1
+BANK24 00C20-00C35 1
+BANK3 001EF-001EF 1
+BANK4 00261-0026F 1
+BANK5 002B6-002EF 1
+BANK6 00369-0036F 1
+BANK7 003A0-003EF 1
+BANK8 00420-0046F 1
+BANK9 004A0-004EF 1
+BIGRAM 02000-027EF 1
+CODE 00800-00801 2
+CODE 01000-01000 2
+CODE 0180C-01877 2
+CODE 0206E-03FFF 2
+CONST 00800-00801 2
+CONST 01000-01000 2
+CONST 0180C-01877 2
+CONST 0206E-03FFF 2
+EEDATA 0F000-0F0FF 2
+ENTRY 00800-00801 2
+ENTRY 01000-01000 2
+ENTRY 0180C-01877 2
+ENTRY 0206E-03FFF 2
+IDLOC 08000-08003 2
+RAM 001EF-001EF 1
+RAM 00261-0026F 1
+RAM 002B6-002EF 1
+RAM 00369-0036F 1
+RAM 003A0-003EF 1
+RAM 00420-0046F 1
+RAM 004A0-004EF 1
+RAM 00520-0056F 1
+RAM 005A0-005EF 1
+RAM 00620-0066F 1
+RAM 006A0-006EF 1
+RAM 00720-0076F 1
+RAM 007A0-007EF 1
+RAM 00820-0086F 1
+RAM 008A0-008EF 1
+RAM 00920-0096F 1
+RAM 009A0-009EF 1
+RAM 00A20-00A6F 1
+RAM 00AA0-00AEF 1
+RAM 00B20-00B6F 1
+RAM 00BA0-00BEF 1
+RAM 00C20-00C35 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0051F 1
+SFR11 00580-0059F 1
+SFR12 00600-0061F 1
+SFR13 00680-0069F 1
+SFR14 00700-0071F 1
+SFR15 00780-0079F 1
+SFR16 00800-0081F 1
+SFR17 00880-0089F 1
+SFR18 00900-0091F 1
+SFR19 00980-0099F 1
+SFR2 00100-0011F 1
+SFR20 00A00-00A1F 1
+SFR21 00A80-00A9F 1
+SFR22 00B00-00B1F 1
+SFR23 00B80-00B9F 1
+SFR24 00C00-00C1F 1
+SFR25 00C80-00C9F 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-0019F 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0021F 1
+SFR5 00280-0029F 1
+SFR6 00300-0031F 1
+SFR7 00380-0039F 1
+SFR8 00400-0041F 1
+SFR9 00480-0049F 1
+STACK 02320-02795 1
+STRCODE 00800-00801 2
+STRCODE 01000-01000 2
+STRCODE 0180C-01877 2
+STRCODE 0206E-03FFF 2
+STRING 00800-00801 2
+STRING 01000-01000 2
+STRING 0180C-01877 2
+STRING 0206E-03FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\PULSEWF.X.production.obj
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":175 2 text10 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":184 2 text10 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":186 3 text9 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":196 3 text9 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":41 4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":43 9 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":45 B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":46 C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":47 D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":48 F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":49 12 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":50 17 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":51 1D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":52 23 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":53 29 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":56 2E intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":58 33 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":60 38 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":61 3A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":62 3B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":63 3F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":64 41 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":67 42 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":70 47 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":72 4C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":73 4D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":74 4E intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":75 4F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":77 50 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":79 57 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":80 59 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":82 5F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":84 68 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":86 6D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":87 73 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":88 79 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":90 7A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":91 7B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":94 7C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":95 7E intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":113 7F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":115 83 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":116 84 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":119 8A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":121 8E intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":122 8F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":124 92 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":125 98 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":126 9A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":129 9B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":130 9C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":131 A2 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":132 AC intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":134 B0 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":135 BF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":137 C3 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":138 C4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":139 C5 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":141 C5 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":144 C6 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":146 CA intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":150 CD intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":155 D4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":157 DF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":158 E0 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":160 E1 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":162 EB intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":163 EC intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":166 ED intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":168 F7 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":169 F8 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":171 FC intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":172 103 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":173 10A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":174 110 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":177 111 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":178 118 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":179 11F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":180 121 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":181 122 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":182 124 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":183 12F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":184 134 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":185 140 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":186 14C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":187 151 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":188 15D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":190 172 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":191 178 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":192 1A9 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":193 1AF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":195 1B3 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":196 1B4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":197 1D4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":198 1EC intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":200 1F5 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":202 21C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":203 224 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":204 229 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":205 22D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":208 22F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":209 287 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":210 28E intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":211 293 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":212 297 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":214 299 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":215 2A2 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":216 2A8 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":217 2A9 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":220 2AA intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":221 2B2 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":223 2B6 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":229 2B8 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":231 2C5 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":232 2C6 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":234 2CC intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":236 2CF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":237 2D0 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":238 2D1 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":239 2D1 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":241 2D3 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":242 2D4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":243 2D5 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":244 2D6 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":248 2D7 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":250 2E4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":251 2E7 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":252 2E9 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":255 2EC intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":257 2F9 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":258 2FB intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":262 301 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":264 30B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":266 310 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":267 31B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":268 31F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":269 320 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":271 325 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":273 335 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":274 337 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":275 33D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":277 344 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":279 348 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":281 34A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":282 34C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":283 34E intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":285 350 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":288 356 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":290 356 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":291 358 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":292 35A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":294 35C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":309 366 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":310 369 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":311 36B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":312 36E intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":313 36F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":314 370 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":316 372 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":327 373 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":329 37D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":331 381 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":332 38D intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":333 395 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":335 39B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":336 39C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":338 3A1 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":340 3A3 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":342 3AC intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":340 3BD intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":345 3C9 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":346 3CF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":348 3D8 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":352 3DF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":353 3E1 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":361 3E2 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":363 3E6 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":364 3EF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":365 3F4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":366 3FD intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":367 3FD intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":368 409 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":369 40E intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":371 41A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":372 426 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":373 42B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":375 437 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":376 443 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":377 448 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":381 453 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":383 459 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":385 465 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":387 46B intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":389 46F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":390 475 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":392 475 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":393 47C intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":395 483 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":396 48A intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":397 491 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":399 498 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":401 49F intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":404 4A1 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":405 4A3 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":406 4A4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":407 4A5 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":409 4A5 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":410 4A7 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":411 4A8 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":413 4A8 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":415 4AB intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":416 4AD intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":419 4AE intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":420 4AF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":421 4AF intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":422 4B1 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":423 4B3 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":424 4B4 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":425 4B7 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":426 4BA intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":427 4BC intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":428 4C1 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":432 4C2 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":433 4C5 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":434 4C7 intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":435 4CA intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":436 4CB intentry CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":449 4CC intentry CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1335 4D3 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1338 4D3 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1907 4D3 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1908 4D4 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1909 4D5 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1910 4D6 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1911 4D7 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1912 4D8 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1913 4D9 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1914 4DA cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1915 4DB cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1919 4DE cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1920 4DF cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1921 4E0 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1922 4E1 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1923 4E2 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1924 4E3 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1925 4E4 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1926 4E5 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1927 4E6 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1931 4E9 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1932 4EA cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1933 4EB cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1934 4EC cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1935 4ED cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1936 4EE cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1937 4EF cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1938 4F0 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1939 4F1 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1943 4F4 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1944 4F5 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1945 4F6 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1946 4F7 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1947 4F8 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1948 4F9 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1949 4FA cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1950 4FB cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1951 4FC cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1955 4FF cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1956 500 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1957 501 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1958 502 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1959 503 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1960 504 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1961 505 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1962 506 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1963 507 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1967 50A cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1968 50B cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1969 50C cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1970 50D cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1971 50E cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1972 50F cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1973 510 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1974 511 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1975 512 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1979 515 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1980 516 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1981 517 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1982 518 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1983 519 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1984 51A cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1985 51B cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1986 51C cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1987 51D cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2008 520 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2009 523 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2013 524 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2014 525 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2015 528 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2019 529 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2020 52A cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2021 52B cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2022 52C cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2023 52D cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2024 52E cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2025 52F cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2026 530 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2027 531 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2028 532 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2029 533 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2030 534 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2034 537 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2035 538 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2036 539 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2037 53A cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2038 53B cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2039 53C cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2040 53D cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2041 53E cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2042 53F cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2043 540 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2044 541 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2045 542 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2049 545 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2050 546 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2051 547 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2052 548 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2053 549 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2054 54A cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2055 54B cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2056 54C cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2057 54D cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2058 54E cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2059 54F cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2060 550 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2066 552 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2067 552 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2068 553 cinit CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2069 554 cinit CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":8 556 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":10 556 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":11 558 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":15 55D text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":16 55D text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":17 55F text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":18 560 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":19 561 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":20 575 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":21 578 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":25 579 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":26 579 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":27 57B text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":28 57C text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":29 57D text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":30 591 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":31 594 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":35 595 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":36 595 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":37 597 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":38 598 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":39 599 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":40 5AD text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":41 5B0 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":45 5B1 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":46 5B1 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":47 5B3 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":48 5B4 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":49 5B5 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":50 5C9 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":51 5CC text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":55 5CD text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":56 5CD text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":57 5CF text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":58 5D0 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":59 5D1 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":60 5E5 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":61 5E8 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":65 5E9 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":66 5E9 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":67 5EB text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":68 5EC text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":69 5ED text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":70 601 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":71 604 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":72 607 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":73 607 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":77 609 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":13 60A text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":78 615 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":79 616 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":81 61A text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":82 61C text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":83 61D text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":85 61E text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":87 621 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":89 626 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":90 628 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":91 629 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":93 62A text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":95 62E text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":96 62F text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":98 634 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":99 637 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":100 645 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":101 649 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":102 656 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":104 65C text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":105 660 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":106 665 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":107 669 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":108 66B text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":109 670 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":110 672 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":111 677 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":112 679 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":113 67E text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":119 684 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":121 686 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":122 68C text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":124 68E text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":125 697 text45 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":934 699 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":936 69B text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":938 6A0 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":940 6A0 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":941 6A2 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":944 6A3 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":945 6A9 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":946 6AF text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":948 6B5 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":949 6BB text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":950 6C1 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":951 6C7 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":952 6CA text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":938 6CF text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":953 6CF text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":954 6D4 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":956 6D9 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":957 6DB text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":958 6DC text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":961 6E2 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":962 6E3 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":964 6E8 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":965 6ED text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":967 6F2 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":970 6F4 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":971 6FA text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":972 700 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":973 706 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":974 716 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":975 722 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":977 727 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":978 72E text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":979 738 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":978 74C text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":982 751 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":983 76A text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":985 76C text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":986 76E text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":987 774 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":988 775 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":993 77A text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":995 77D text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":996 77E text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":997 77F text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":998 781 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":999 783 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1000 784 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1002 786 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1003 787 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1004 788 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1005 78A text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1007 78B text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1008 78E text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1009 78F text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1012 794 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1016 797 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1017 798 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1018 799 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1019 79A text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1023 79C text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1027 79E text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1028 79F text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1029 7A0 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1035 7A2 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1039 7A4 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1040 7A5 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1041 7A6 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1042 7A7 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1043 7A8 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1044 7A9 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1047 7AA text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1048 7B0 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1049 7B1 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1051 7B5 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1052 7B7 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1056 7B8 text7 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1058 7BA text7 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":42 7BB text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":45 7BB text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":46 7BD text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":47 7C1 text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":48 7C3 text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":49 7CE text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":52 7D0 text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":53 7D4 text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":54 7DB text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":52 7DF text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c":56 7E0 text32 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":6 802 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":14 802 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":15 805 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":16 809 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 80B text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":18 80D text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":19 812 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 816 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":22 817 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":23 81C text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":24 824 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":25 828 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":27 829 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":28 82E text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c":30 832 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":86 839 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":90 839 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":91 846 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":92 852 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":93 861 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":94 868 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":96 877 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":97 87B text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":98 87C text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":99 87D text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":100 87E text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":101 87F text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":102 880 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":103 886 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":104 887 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":106 88D text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":110 891 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":111 897 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":112 899 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":114 8A4 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":115 8AA text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":113 8AE text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":117 8B3 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":121 8B7 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":122 8BD text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":123 8BF text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":125 8CA text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":126 8D0 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":124 8D4 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":129 8D8 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":131 8DA text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":132 8E0 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":134 8EA text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":136 8EC text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":137 8F2 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":139 8FC text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":140 8FD text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":141 903 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":142 905 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":143 90B text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":144 915 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":146 917 text31 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":453 92F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":456 92F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":457 932 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":458 940 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":459 948 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":460 94B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":461 94E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":462 951 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":463 954 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":464 957 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":465 958 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":468 959 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":470 95B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":472 95D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":473 962 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":474 968 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":475 96E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":476 974 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":477 97A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":478 97C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":480 97E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":482 986 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":483 988 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":484 98A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":485 98B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":486 98C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":487 98D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":488 98E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":489 98F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":490 990 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":491 991 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":493 992 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":496 993 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":497 996 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":498 999 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":499 9A6 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":500 9B3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":501 9B5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":502 9B6 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":503 9B8 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":504 9B9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":505 9BA maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":506 9C1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":510 9C3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":512 9CC maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":513 9CE maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":515 9D1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":517 9DB maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":518 9DD maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":519 9E0 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":520 9E2 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":522 9E4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":524 9E7 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":525 9E9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":526 9EB maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":527 9EC maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":529 9EC maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":530 9EE maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":538 9F0 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":540 9F4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":541 A00 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":543 A0C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":545 A11 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":546 A12 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":549 A15 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":551 A1A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":552 A1B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":554 A1E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":555 A26 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":557 A2C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":559 A31 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":560 A3A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":561 A41 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":564 A43 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":566 A48 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":567 A58 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":568 A6E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":569 A75 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":570 A79 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":571 A80 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":572 A84 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":574 A87 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":575 A87 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":577 A8C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":578 A91 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":579 A98 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":580 A9D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":581 AA3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":582 AA4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":584 AA8 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":585 AA9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":586 AAF maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":587 AB5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":588 AB9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":589 ABB maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":590 ABF maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":591 AC1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":592 AC2 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":594 AC3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":595 AC9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":598 ACA maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":599 AD0 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":600 AD8 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":602 ADA maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":604 ADE maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":605 AE7 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":606 AEE maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":609 AF2 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":611 AF7 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":612 B06 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":613 B1B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":614 B22 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":616 B26 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":617 B2D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":618 B31 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":621 B34 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":623 B3A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":624 B3B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":626 B3D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":628 B41 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":630 B4A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":632 B4F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":633 B54 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":635 B56 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":637 B5B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":638 B60 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":643 B66 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":644 B67 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":646 B6C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":647 B71 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":648 B7C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":649 B7F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":651 B81 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":652 B83 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":654 B84 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":656 B87 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":658 B8C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":659 B91 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":660 B98 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":661 B9D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":662 BA3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":663 BA4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":665 BA8 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":666 BA9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":667 BAF maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":668 BB5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":669 BBA maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":670 BBC maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":671 BC1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":672 BC3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":673 BC5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":675 BC6 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":681 BC8 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":684 BCD maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":685 BD1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":687 BD5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":688 BD8 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":689 BDE maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":690 BE4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":692 BE5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":696 BEB maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":698 BF2 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":700 C0F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":702 C26 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":703 C29 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":704 C29 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":706 C2C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":707 C2D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":708 C2E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":710 C2F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":711 C30 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":712 C31 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":713 C32 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":715 C39 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":717 C3B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":718 C3C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":719 C3D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":720 C3E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":721 C3F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":722 C40 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":723 C41 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":725 C4C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":727 C4E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":728 C4F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":729 C50 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":730 C51 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":731 C52 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":732 C53 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":733 C54 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":737 C60 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":739 C67 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":740 C6A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":741 C70 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":743 C76 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":744 C80 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":746 C8A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":748 C9E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":749 C9F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":750 CA0 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":751 CA1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":752 CA2 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":753 CA3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":754 CA4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":756 CB0 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":757 CB7 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":758 CBE maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":759 CC1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":760 CC7 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":761 CCD maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":762 CD7 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":766 CDC maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":770 CF5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":772 CF9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":773 CFE maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":775 D06 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":778 D18 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":780 D1D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":783 D29 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":784 D2B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":785 D2C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":786 D2D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":787 D2E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":788 D2F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":789 D30 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":792 D3D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":794 D42 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":797 D47 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":800 D49 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":803 D4F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":804 D51 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":805 D57 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":806 D5D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":807 D5F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":811 D6B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":812 D6D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":813 D6E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":814 D70 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":816 D8A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":817 D8D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":818 D8F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":819 D91 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":820 D93 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":822 D94 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":825 D96 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":827 D97 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":829 D9A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":831 D9C maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":832 D9D maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":833 D9E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":835 D9E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":836 D9F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":837 D9F maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":839 DA1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":841 DA3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":844 DA5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":846 DE9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":847 DF0 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":852 DF4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":857 E25 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":859 E27 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":860 E2A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":861 E31 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":863 E35 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":864 E66 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":867 E6B maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":868 EA9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":869 EAB maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":871 EB1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":872 EB8 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":873 EBF maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":874 EC6 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":875 EC8 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":877 ECB maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":879 ECD maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":883 ECF maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":884 ED5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":886 EE1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":887 EE9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":888 F19 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":890 F1E maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":894 F2A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":897 F66 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":898 F97 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":899 F98 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":901 F9A maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":902 FB4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":903 FB7 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":904 FB9 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":905 FBB maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":908 FBD maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":909 FBF maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":910 FC0 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":911 FC1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":912 FC2 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":913 FC3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":915 FC4 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":916 FC5 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":917 FC6 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":918 FD3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":919 FE0 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":924 FE6 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":926 FEB maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":927 FF1 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":929 FF3 maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":930 FFC maintext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":507 FFF maintext CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":15 1001 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":43 1001 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":45 1004 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":46 1006 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":47 100A text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":48 100F text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":49 1014 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":52 1018 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":49 101F text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":55 101F text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":56 102F text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":57 1036 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":58 1045 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":59 104C text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":60 1052 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":61 1057 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":62 1067 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":63 1077 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":64 107B text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":65 107C text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":66 1082 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":67 1083 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":68 1089 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":70 108D text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":71 1093 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":72 109F text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":73 10A5 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":75 10A6 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":76 10AC text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":77 10B0 text40 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":49 10C8 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":55 10C8 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":56 10D8 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":57 10DF text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":58 10EE text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":59 10F5 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":60 10FB text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":61 1100 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":62 1110 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":63 1120 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":64 1124 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":65 1125 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":66 112B text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":67 112C text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":68 1132 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":70 1136 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":71 113C text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":72 1148 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":73 114E text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":75 114F text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":76 1155 text30 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":77 1159 text30 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1244 1171 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1247 1171 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1248 1178 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1250 117F text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1252 1182 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1253 1188 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1254 118B text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1255 118C text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1257 118E text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1258 1194 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1260 1196 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1262 1198 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1263 119E text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1265 11A0 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1267 11A2 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1268 11A8 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1269 11AA text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1271 11AC text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1272 11B2 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1274 11B4 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1276 11B6 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1277 11BC text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1279 11BE text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1281 11C9 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1282 11CF text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1284 11D1 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1286 11D6 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1287 11DC text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1288 11E2 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1289 11E3 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1291 11E5 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1292 11EB text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1293 11EE text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1294 11EF text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1296 11F0 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1298 11F2 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1300 11F7 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1301 11FD text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1302 1203 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1303 1209 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1305 120F text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1306 1210 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1308 1211 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1309 1213 text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1310 121A text14 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1311 121C text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":62 121F text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":67 121F text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":68 122F text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":69 1236 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":70 1245 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":71 124C text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":72 1251 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":73 1261 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":74 1271 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":75 1275 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":77 1276 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":78 1277 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":79 127D text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":134 1283 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":136 1287 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":137 1289 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":138 128F text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":139 1295 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":140 129B text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":143 129F text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":145 12A3 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":146 12A5 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":147 12AB text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":148 12B1 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":149 12B7 text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":156 12BB text39 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":62 12D3 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":67 12D3 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":68 12E3 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":69 12EA text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":70 12F9 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":71 1300 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":72 1305 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":73 1315 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":74 1325 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":75 1329 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":77 132A text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":78 132B text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":79 1331 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":134 1337 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":136 133B text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":137 133D text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":138 1343 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":139 1349 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":140 134F text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":143 1353 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":145 1357 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":146 1359 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":147 135F text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":148 1365 text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":149 136B text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":156 136F text28 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":86 1387 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":90 1387 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":91 1394 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":92 13A0 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":93 13AF text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":94 13B6 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":96 13C5 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":97 13C9 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":98 13CA text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":99 13CB text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":100 13CC text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":101 13CD text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":102 13CE text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":103 13D4 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":104 13D5 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":106 13DB text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":110 13DF text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":111 13E5 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":112 13E7 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":114 13F2 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":115 13F8 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":113 13FC text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":117 1401 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":121 1405 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":122 140B text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":123 140D text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":125 1418 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":126 141E text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":124 1422 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":129 1426 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":131 1428 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":132 142E text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":134 1438 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":136 143A text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":137 1440 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":139 144A text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":140 144B text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":141 1451 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":142 1453 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":143 1459 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":144 1463 text41 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c":146 1465 text41 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":34 147D text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":39 147D text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":40 1487 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":41 1492 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":51 149D text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":52 14B3 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":53 14C9 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":54 14D2 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":56 14DA text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":57 1513 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":58 151C text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":59 1528 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":63 152D text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":64 154A text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":66 15C9 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":67 160E text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":69 161A text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":70 16C2 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":71 16CE text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":72 16DA text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":75 16F6 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":76 1716 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":77 1720 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":78 174C text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":82 1764 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":83 176D text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":85 1790 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":87 179B text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":89 17A2 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":91 17AE text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":93 17B8 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":97 17C0 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":107 17C8 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":109 17CC text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":112 17E5 text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\MOTORCONTROL.C":113 17FF text24 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":13 1800 swtext1 CONST
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":15 187C text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":17 187C text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":18 1882 text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":20 1884 text27 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1186 1885 text5 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1188 1887 text5 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1189 188A text5 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1190 188E text5 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1059 188F text3 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1063 188F text3 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1065 1894 text3 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1066 1896 text3 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1067 1898 text3 CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1991 1899 inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1992 1899 inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1993 189A inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1994 189A inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1995 189B inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1996 189C inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1997 189D inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1998 189E inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1999 189F inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2000 18A0 inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2001 18A1 inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2002 18A2 inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2004 18A3 inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":2003 18A4 inittext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1890 18A5 clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1891 18A5 clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1892 18A6 clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1893 18A6 clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1894 18A7 clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1895 18A8 clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1896 18A9 clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1897 18AA clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1898 18AB clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1899 18AC clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1900 18AD clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1901 18AE clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1903 18AF clrtext CODE
+"C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.":1902 18B0 clrtext CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1092 18B1 text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1094 18B1 text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1095 18B3 text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1096 18B5 text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1097 18B6 text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1098 18BA text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1099 18BB text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1100 18BC text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1106 18BD text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1107 18C0 text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1108 18C1 text17 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1134 18C2 text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1136 18C2 text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1138 18C4 text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1139 18C5 text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1140 18CA text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1141 18CC text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1142 18CD text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1144 18CE text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1145 18D0 text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1146 18D1 text15 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1151 18D2 text15 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwtoft.c":28 18D3 text37 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwtoft.c":30 18D3 text37 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1153 18E6 text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1155 18E6 text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1156 18E8 text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1157 18EA text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1158 18EB text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1159 18ED text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1160 18EE text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1161 18EF text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1162 18F1 text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1163 18F3 text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1164 18F4 text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1165 18F5 text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1166 18F7 text1 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1168 18F8 text1 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwtoft.c":28 18F9 text16 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwtoft.c":30 18F9 text16 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1235 190E text4 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1237 190E text4 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1238 1915 text4 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1239 1919 text4 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1240 191E text4 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1241 1922 text4 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1069 1938 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1071 1938 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1072 193B text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1073 193C text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1074 193D text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1075 193F text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1078 1940 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1079 1942 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1080 1943 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1081 1945 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1082 1946 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1083 1947 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1084 1948 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1085 1949 text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1086 194A text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1087 194B text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1088 194C text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1090 194D text6 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1110 194E text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1113 194E text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1114 1953 text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1115 1955 text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1116 1956 text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1117 1958 text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1118 195B text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1119 195F text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1120 1961 text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1121 1962 text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1122 1964 text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1123 1966 text22 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":200 1967 text23 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":203 1967 text23 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":204 196C text23 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":206 1976 text23 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":204 198A text23 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1124 198F text44 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1126 198F text44 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1127 1993 text44 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1128 1999 text44 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1129 19A2 text44 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1130 19AE text44 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1131 19B0 text44 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1132 19B7 text44 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":6 19B8 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":13 19B8 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":14 19BD text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":15 19BF text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":16 19C1 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":17 19C6 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":15 19CA text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":20 19CB text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":21 19D3 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":22 19D7 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":23 19DC text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c":25 19E0 text12 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1124 19E7 text35 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1126 19E7 text35 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1127 19EC text35 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1128 19F2 text35 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1129 19FD text35 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1130 1A0A text35 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1131 1A0D text35 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1132 1A17 text35 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":4 1A18 text29 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":6 1A18 text29 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":7 1A1B text29 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":8 1A2F text29 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":9 1A31 text29 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":10 1A45 text29 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":11 1A47 text29 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":12 1A49 text29 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1195 1A54 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1197 1A54 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1198 1A56 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1200 1A5C text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1202 1A61 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1203 1A62 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1204 1A63 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1206 1A63 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1208 1A64 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1217 1A6A text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1218 1A6C text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1219 1A70 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1221 1A7A text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1222 1A86 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1219 1A8F text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1224 1A9B text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1226 1A9F text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1230 1AA1 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1232 1AA5 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\main.c":1233 1AA9 text2 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":154 1AAA text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":156 1AAA text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":157 1AAD text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":158 1AAF text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":159 1ABA text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":160 1ABE text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":161 1ACC text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":162 1AD2 text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":163 1ADB text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":164 1AE1 text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":166 1AEF text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":167 1AF9 text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":168 1AFA text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":171 1AFB text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":172 1B05 text19 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":72 1B07 text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":74 1B07 text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":75 1B0A text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":76 1B0C text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":77 1B16 text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":78 1B1A text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":79 1B2B text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":80 1B31 text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":81 1B3A text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":82 1B40 text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":84 1B4E text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":85 1B58 text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":86 1B59 text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":89 1B5A text21 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":90 1B64 text21 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":62 1B66 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":64 1B66 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":65 1B6E text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":67 1B75 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":68 1B79 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":66 1B7F text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":71 1B84 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":72 1B88 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":73 1B92 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":70 1B98 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":74 1B98 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":76 1B9D text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":77 1B9F text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":75 1BA5 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":79 1BA7 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":80 1BA9 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":81 1BAF text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":82 1BB1 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":83 1BC1 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":84 1BC4 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":86 1BC5 text42 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":62 1BC6 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":64 1BC6 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":65 1BCF text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":67 1BD6 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":68 1BDA text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":66 1BE0 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":71 1BE5 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":72 1BE9 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":73 1BF3 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":70 1BF9 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":74 1BF9 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":76 1BFE text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":77 1C00 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":75 1C06 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":79 1C08 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":80 1C0A text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":81 1C10 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":82 1C12 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":83 1C22 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":84 1C25 text33 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":86 1C26 text33 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":152 1C27 text11 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":155 1C27 text11 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":156 1C3B text11 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":157 1C50 text11 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":158 1C63 text11 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":159 1C78 text11 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":161 1C8A text11 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":163 1C8B text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":165 1C8B text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":166 1C9F text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":167 1CB4 text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":168 1CC7 text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":169 1CDC text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":170 1CEE text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":171 1CEF text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\DISPLAY.C":173 1CF0 text8 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":94 1CF1 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":96 1CF1 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":97 1CF3 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":99 1CF9 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":101 1D00 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":103 1D06 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":104 1D09 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":105 1D0A text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":106 1D0C text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":108 1D11 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":110 1D17 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":111 1D1A text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":112 1D1B text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":116 1D1E text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":118 1D26 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":120 1D2C text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":121 1D2F text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":122 1D31 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":125 1D32 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":127 1D3B text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":129 1D46 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":130 1D47 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":131 1D48 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":133 1D4D text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":135 1D58 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":136 1D59 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":137 1D5A text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":139 1D5F text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":140 1D61 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":141 1D62 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":144 1D63 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":145 1D64 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":146 1D65 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":147 1D66 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":148 1D67 text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":151 1D6C text18 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":12 1D6F text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":14 1D6F text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":15 1D71 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":17 1D77 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":19 1D7E text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":21 1D84 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":22 1D87 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":23 1D88 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":24 1D8A text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":26 1D8F text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":28 1D95 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":29 1D98 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":30 1D99 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":34 1D9C text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":36 1DA4 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":38 1DAA text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":39 1DAD text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":40 1DAF text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":43 1DB0 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":45 1DB9 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":47 1DC4 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":48 1DC6 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":49 1DC7 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":51 1DCC text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":53 1DD7 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":54 1DD8 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":55 1DD9 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":57 1DDE text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":58 1DE0 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":59 1DE1 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":62 1DE2 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":63 1DE3 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":64 1DE4 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":65 1DE5 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":66 1DE6 text20 CODE
+"D:\TDC\Sachin\Pulse 500 Twin 13\PULSEWF.X\ENCODER.C":69 1DEB text20 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":6 1DEE text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":14 1DEE text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":15 1DF0 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":16 1DF2 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":17 1DFD text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":18 1DFF text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":19 1DFF text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":20 1E01 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":21 1E0C text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":23 1E10 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":24 1E18 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":25 1E1E text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":26 1E20 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":27 1E22 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":28 1E29 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":26 1E2D text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":31 1E2E text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":32 1E35 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":33 1E45 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":34 1E4D text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":36 1E4E text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":37 1E55 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":39 1E59 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":40 1E5C text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":41 1E67 text43 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":6 1E70 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":14 1E70 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":15 1E72 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":16 1E74 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":17 1E7F text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":18 1E81 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":19 1E81 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":20 1E83 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":21 1E8E text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":23 1E92 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":24 1E9A text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":25 1EA0 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":26 1EA2 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":27 1EA4 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":28 1EAB text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":26 1EAF text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":31 1EB0 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":32 1EB7 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":33 1EC7 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":34 1ECF text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":36 1ED0 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":37 1ED7 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":39 1EDB text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":40 1EDE text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c":41 1EE9 text34 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":44 1EF2 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":49 1EF2 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":50 1F02 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":51 1F0B text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":52 1F1B text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":53 1F1C text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":54 1F22 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":55 1F29 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":56 1F2B text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":57 1F2D text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":58 1F32 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":60 1F3B text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":61 1F42 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":63 1F49 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":64 1F4D text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":66 1F56 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":67 1F5D text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":65 1F5F text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":70 1F62 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":71 1F65 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":72 1F70 text38 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":44 1F79 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":49 1F79 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":50 1F89 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":51 1F92 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":52 1FA2 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":53 1FA3 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":54 1FA9 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":55 1FB0 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":56 1FB2 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":57 1FB4 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":58 1FB9 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":60 1FC2 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":61 1FC9 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":63 1FD0 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":64 1FD4 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":66 1FDD text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":67 1FE4 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":65 1FE6 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":70 1FE9 text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":71 1FEC text26 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":72 1FF7 text26 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_disp_hex_window1 384E 0 CODE 0 text11 dist/default/production\PULSEWF.X.production.obj
+_disp_hex_window2 3916 0 CODE 0 text8 dist/default/production\PULSEWF.X.production.obj
+___lwdiv@dividend A2 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+___aldiv@counter A9 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_disp_hex_window11 4 0 CODE 0 text10 dist/default/production\PULSEWF.X.production.obj
+_disp_hex_window22 6 0 CODE 0 text9 dist/default/production\PULSEWF.X.production.obj
+_i 60 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+__CFG_PLLEN$ON 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+___altoft@c A8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+___lwdiv@counter A7 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_rel_wirespeed 1C8 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+___lwtoft@c A8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__size_of_disp_hex_window22 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of___ftneg 310A 0 CODE 0 text27 dist/default/production\PULSEWF.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_PR2 1B 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 369 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+Delayms@yyy A4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hintentry 9A2 0 CODE 0 intentry -
+__size_of_Send_Byte 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+__pintentry 8 0 CODE 0 intentry dist/default/production\PULSEWF.X.production.obj
+_One 1AA 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+___ftadd@f1 A8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_iii 23E 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+_ijk 128 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_Two 1AE 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_lmn 12A 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_key EF 0 BANK1 1 dataBANK1 dist/default/production\PULSEWF.X.production.obj
+_minuscount2 14F 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_PIR1 11 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_TMR0 15 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_LATB 10D 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_torchstatus1 15F 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_old1 1B8 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_old2 1BA 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+___ftneg@f1 A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_new1 54 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+_new2 56 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+___ftadd@f2 AB 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_OneH 133 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_OneL 134 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+i1___lwtoft@c 78 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+_TwoH 135 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_TwoL 136 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+i1___ftadd@sign 3A 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+_newsetwirespeed 6A 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+_main 125E 0 CODE 0 maintext dist/default/production\PULSEWF.X.production.obj
+_capture_init 3184 0 CODE 0 text15 dist/default/production\PULSEWF.X.production.obj
+___sp 0 0 STACK 2 stack C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+_temp 66 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_tans 15E 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+start 9A2 0 CODE 0 init C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+i1___ftpack@exp 73 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+?___ftadd A8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_portpin_init 3270 0 CODE 0 text6 dist/default/production\PULSEWF.X.production.obj
+___fttol@f1 C5 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__end_of_system_init 3132 0 CODE 0 text3 dist/default/production\PULSEWF.X.production.obj
+___ftmul@f1 B5 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__end_of___aldiv 3DE4 0 CODE 0 text34 dist/default/production\PULSEWF.X.production.obj
+___fttol@lval CE 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+___ftdiv@f1 C8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_TMR1H 17 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_Update_PWM 3430 0 CODE 0 text35 dist/default/production\PULSEWF.X.production.obj
+_TMR1L 16 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_integral_new 123 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_RCREG 199 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1Update_PWM@setwsduty 70 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+_TORCH 16C 0 BANK2 1 dataBANK2 dist/default/production\PULSEWF.X.production.obj
+_TRISB 8D 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_TRISC 8E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_TXREG 19A 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_PORTA C 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+_PORTB D 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_SPBRG 19B 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_TXSTA 19E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_PORTC E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_T1CON 18 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_weldmode 67 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+___ftmul@f2 B8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_Timer0_init 3184 0 CODE 0 text17 dist/default/production\PULSEWF.X.production.obj
+___ftdiv@f2 C5 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hconfig 10012 0 CONFIG 0 config -
+__Lconfig 1000E 0 CONFIG 0 config -
+?___ftneg A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+___ftpack 378C 0 CODE 0 text33 dist/default/production\PULSEWF.X.production.obj
+__size_of_key_application 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_TypeU 68 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+?___lwmod A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__end_ofi1___ftadd 28FA 0 CODE 0 text41 dist/default/production\PULSEWF.X.production.obj
+_torchonf 1D6 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+___ftdiv@f3 D0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hbigram 0 0 ABS 0 bigram -
+__Lbigram 0 0 ABS 0 bigram -
+_torchstatus2 160 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+i1___ftadd@f1 30 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+_mili1_100 14A 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_mili2_100 14B 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__CFG_CP$ON 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_txonf 1D7 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_updatedispf 1D8 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_transmitonf 161 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_pfreq 168 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+___ftge@ff1 B0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_digit 5D 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+_delay 22E 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+_iTest 23C 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+_Count 132 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+___ftmul@cntr C3 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__size_of_Display 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1___ftadd 270E 0 CODE 0 text41 dist/default/production\PULSEWF.X.production.obj
+___ftdiv@cntr CF 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+___ftge@ff2 B3 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_Fltpfreq 126 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_setpfreq 1CA 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__end_of_Adaptive_base_pid 3000 0 CODE 0 text24 dist/default/production\PULSEWF.X.production.obj
+enc1_port@portvalue A4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+enc2_port@portvalue A3 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+?___fttol C5 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_PIE1bits 91 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_PIE2bits 92 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits 11 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_PIR2bits 12 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_commandu 16A 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_PWM_init 329C 0 CODE 0 text22 dist/default/production\PULSEWF.X.production.obj
+_CCPR2H 299 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+?___ftmul B5 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_LATAbits 10C 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_LATBbits 10D 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_LATCbits 10E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+?___aldiv A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_CCPR1L 291 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_CCPR2L 298 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_ANSELB 18D 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+___altoft F76 0 CODE 0 text32 dist/default/production\PULSEWF.X.production.obj
+?___ftdiv C5 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__end_ofi1___ftdiv 2190 0 CODE 0 text40 dist/default/production\PULSEWF.X.production.obj
+?___lwdiv A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+___lwtoft 31F2 0 CODE 0 text16 dist/default/production\PULSEWF.X.production.obj
+__size_ofi1_Update_PWM 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_ofi1___fttol 3EF2 0 CODE 0 text38 dist/default/production\PULSEWF.X.production.obj
+_encod1 5E 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+_encod2 5F 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+pic14e$flags 7E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+___ftmul@f3_as_product C0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+_enccount 145 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+_count_pid 1CF 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_error4 1D0 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+i1___ftadd@f2 33 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+i1_Update_PWM 331E 0 CODE 0 text44 dist/default/production\PULSEWF.X.production.obj
+__CFG_CPD$ON 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_TypeDP 6C 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+_error8 146 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__end_of_enc1_port 36CC 0 CODE 0 text21 dist/default/production\PULSEWF.X.production.obj
+_error_old 1A0 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_count_1ms 1B0 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__end_of___ftpack 384E 0 CODE 0 text33 dist/default/production\PULSEWF.X.production.obj
+_count_2ms 142 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+?___ftpack A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_cRelSpeedSign 13B 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_prevsetcurrent 1BE 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_Send_Byte 310A 0 CODE 0 text5 dist/default/production\PULSEWF.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_iGasDbCnt 1B6 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+___ftadd@sign B2 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_cWf2t4tmodefg 13D 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__Hcode 0 0 ABS 0 code -
+_Tsampling 1E2 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+__Lcode 0 0 ABS 0 code -
+_minuspara1 150 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+i1___ftmul@sign 2F 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+_rxdata 64 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+___ftge 3430 0 CODE 0 text29 dist/default/production\PULSEWF.X.production.obj
+__end_ofi1___lwtoft 31CC 0 CODE 0 text37 dist/default/production\PULSEWF.X.production.obj
+i1___aldiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+stackhi 2795 0 ABS 0 - C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+i1___ftpack@sign 74 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+_pportb 158 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__size_of_SCANENCODER1 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+stacklo 2320 0 ABS 0 - C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+__size_of_SCANENCODER2 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1___ftdiv@sign 2F 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+_scaled_baseval2 12C 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_minuspara2 61 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hinit 9A2 0 CODE 0 init -
+__Linit 9A2 0 CODE 0 init -
+___wmul 2002 0 CODE 0 text25 dist/default/production\PULSEWF.X.production.obj
+__end_of_main 2000 0 CODE 0 maintext dist/default/production\PULSEWF.X.production.obj
+_chksum 13E 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__size_of___lwtoft 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_Tx_ptr 1CC 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+_pcount 151 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_arrptr 138 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_plus111 152 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+i1___aldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+_erroru 166 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_plus222 153 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+___wmul@multiplier A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__end_of_enc2_port 360E 0 CODE 0 text19 dist/default/production\PULSEWF.X.production.obj
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__pdataBANK0 6F 0 BANK0 1 dataBANK0 dist/default/production\PULSEWF.X.production.obj
+i1___ftadd@exp1 3C 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+?i1___ftadd 30 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+_disp1term 230 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+__end_of___lwtoft 321C 0 CODE 0 text16 dist/default/production\PULSEWF.X.production.obj
+___ftmul@sign C4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_disp2term 232 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+end_of_initialization AA4 0 CODE 0 cinit dist/default/production\PULSEWF.X.production.obj
+_disp3term 234 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+___aldiv@sign AA 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_disp4term 236 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+___ftdiv@sign D4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_togglepin 1EE 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+i1___aldiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+_wfspeedchangef 16F 0 BANK2 1 dataBANK2 dist/default/production\PULSEWF.X.production.obj
+i1___fttol@f1 3D 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+___wmul@multiplicand A2 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+_kpressread 149 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+i1___ftmul@f1 20 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+i1___fttol 3DE4 0 CODE 0 text38 dist/default/production\PULSEWF.X.production.obj
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+i1___fttol@lval 46 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__pdataBANK1 EF 0 BANK1 1 dataBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+i1___ftdiv@f1 23 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+_controller_out 224 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+__size_of_PWM_init 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_ISR_Function 9A2 0 CODE 0 intentry dist/default/production\PULSEWF.X.production.obj
+i1___ftmul 243E 0 CODE 0 text39 dist/default/production\PULSEWF.X.production.obj
+SCANENCODER1@result A7 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_TRISAbits 8C 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_RCSTAbits 19D 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of___ftadd 125E 0 CODE 0 text31 dist/default/production\PULSEWF.X.production.obj
+_TRISCbits 8E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_PORTAbits C 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1___aldiv 3BDC 0 CODE 0 text43 dist/default/production\PULSEWF.X.production.obj
+_TXSTAbits 19E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_PORTCbits E 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_T2CONbits 1C 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+__CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_minfmspeed 1E9 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+_creepspeed 22C 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+_maxfmspeed 1E7 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+__end_of_Delayms 331E 0 CODE 0 text23 dist/default/production\PULSEWF.X.production.obj
+_inchkeyon 1D4 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+?___altoft A8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_uart_init 31CC 0 CODE 0 text1 dist/default/production\PULSEWF.X.production.obj
+__end_ofi1___ftmul 25A6 0 CODE 0 text39 dist/default/production\PULSEWF.X.production.obj
+__size_of_ISR_Function 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1___ftdiv 203E 0 CODE 0 text40 dist/default/production\PULSEWF.X.production.obj
+_recchksum 15A 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_error_new 120 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+?___lwtoft A8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+i1Update_PWM@Dutycnt 76 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+__HdataBANK2 0 0 ABS 0 dataBANK2 -
+_secondpulse1 15B 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__LdataBANK2 0 0 ABS 0 dataBANK2 -
+__end_ofi1_Update_PWM 3370 0 CODE 0 text44 dist/default/production\PULSEWF.X.production.obj
+__pdataBANK2 16C 0 BANK2 1 dataBANK2 dist/default/production\PULSEWF.X.production.obj
+__pbssBIGRAM 2796 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_setvoltage 58 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+_minoutmax 227 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+SCANENCODER2@result A6 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__end_of_PWM_init 32CE 0 CODE 0 text22 dist/default/production\PULSEWF.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 3 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+___ftmul@exp BF 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 -
+__Lbank4 0 0 ABS 0 bank4 -
+_enc1_port 360E 0 CODE 0 text21 dist/default/production\PULSEWF.X.production.obj
+___ftdiv@exp D3 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 -
+_enc2_port 3554 0 CODE 0 text19 dist/default/production\PULSEWF.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 -
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hbank6 0 0 ABS 0 bank6 -
+__Lbank6 0 0 ABS 0 bank6 -
+_diswin1 1DA 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 -
+__Lbank7 0 0 ABS 0 bank7 -
+i1___ftmul@f2 23 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__end_of_uart_init 31F2 0 CODE 0 text1 dist/default/production\PULSEWF.X.production.obj
+__Hbank8 0 0 ABS 0 bank8 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Lbank9 0 0 ABS 0 bank9 -
+_pidParams2 2796 0 ABS 1 - dist/default/production\PULSEWF.X.production.obj
+Update_PWM@Temp1 D7 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__ptext1 31CC 0 CODE 0 text1 dist/default/production\PULSEWF.X.production.obj
+__ptext2 34A8 0 CODE 0 text2 dist/default/production\PULSEWF.X.production.obj
+__HdataBANK3 0 0 ABS 0 dataBANK3 -
+__LdataBANK3 0 0 ABS 0 dataBANK3 -
+__ptext3 311E 0 CODE 0 text3 dist/default/production\PULSEWF.X.production.obj
+__pdataBANK3 1DA 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+_PID_sParams 320 0 BANK6 1 bssBANK6 dist/default/production\PULSEWF.X.production.obj
+__ptext4 321C 0 CODE 0 text4 dist/default/production\PULSEWF.X.production.obj
+__end_of_disp_hex_window1 3916 0 CODE 0 text11 dist/default/production\PULSEWF.X.production.obj
+_Adaptive_base_pid 28FA 0 CODE 0 text24 dist/default/production\PULSEWF.X.production.obj
+__ptext5 310A 0 CODE 0 text5 dist/default/production\PULSEWF.X.production.obj
+i1___ftdiv@f2 20 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__ptext6 3270 0 CODE 0 text6 dist/default/production\PULSEWF.X.production.obj
+__end_of_disp_hex_window2 39E2 0 CODE 0 text8 dist/default/production\PULSEWF.X.production.obj
+_comm_error_count 140 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__ptext7 D32 0 CODE 0 text7 dist/default/production\PULSEWF.X.production.obj
+_Timer0_init 3162 0 CODE 0 text17 dist/default/production\PULSEWF.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_recstatus 1C6 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__ptext8 3916 0 CODE 0 text8 dist/default/production\PULSEWF.X.production.obj
+__end_ofi1___ftpack 378C 0 CODE 0 text42 dist/default/production\PULSEWF.X.production.obj
+__ptext9 6 0 CODE 0 text9 dist/default/production\PULSEWF.X.production.obj
+__size_of___altoft 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__size_of_system_init 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+Send_Byte@transbyte A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+i1___ftpack 36CC 0 CODE 0 text42 dist/default/production\PULSEWF.X.production.obj
+__size_of_Update_PWM 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__HdataBANK4 0 0 ABS 0 dataBANK4 -
+_crater_speed 5C 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+_secondpulse2 15C 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__LdataBANK4 0 0 ABS 0 dataBANK4 -
+__size_of_send_status 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_wfstatusu 16B 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_psstatusu 6E 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+__pdataBANK4 25B 0 BANK4 1 dataBANK4 dist/default/production\PULSEWF.X.production.obj
+_key_application D32 0 CODE 0 text7 dist/default/production\PULSEWF.X.production.obj
+_error_code1 1D1 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_OSCTUNEbits 98 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_of_transmittops 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+disp_hex_window2@hex_data A8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__end_of__initialization AA4 0 CODE 0 cinit dist/default/production\PULSEWF.X.production.obj
+_CCP1CONbits 293 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_CCP2CONbits 29A 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_avgpperiod 164 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_pluscount1 154 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_BAUDCTLbits 19F 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_setwirespeed 5A 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+__end_of___lwdiv 1072 0 CODE 0 text13 dist/default/production\PULSEWF.X.production.obj
+_statusptr1 130 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+i1___fttol@exp1 4A 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__size_of_uart_init 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_of_Timer0_init 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_pluscount2 155 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_detect_display_error 22E2 0 CODE 0 text14 dist/default/production\PULSEWF.X.production.obj
+__size_of_Delayms 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1___ftdiv@f3 2B 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+_prevsetvoltage 1C0 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_error_code2 1D2 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_system_init 311E 0 CODE 0 text3 dist/default/production\PULSEWF.X.production.obj
+_transmittops 34A8 0 CODE 0 text2 dist/default/production\PULSEWF.X.production.obj
+___ftadd 1072 0 CODE 0 text31 dist/default/production\PULSEWF.X.production.obj
+__size_of_detect_display_error 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_send_status 3246 0 CODE 0 text4 dist/default/production\PULSEWF.X.production.obj
+_prevsetwirespeed 1C2 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_onesecf 62 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+_Update_PWM 33CE 0 CODE 0 text35 dist/default/production\PULSEWF.X.production.obj
+_delinch 1B2 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_cEditfg 139 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_wfstatusbyte 1D9 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+___ftneg 30F8 0 CODE 0 text27 dist/default/production\PULSEWF.X.production.obj
+_pperiod 1BC 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_cTestfg 13C 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+___lwmod 3370 0 CODE 0 text12 dist/default/production\PULSEWF.X.production.obj
+__Hspace_0 8009 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+init_ram 3132 0 CODE 0 inittext dist/default/production\PULSEWF.X.production.obj
+___ftpack@sign A4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_displayonf 1ED 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+__Hspace_1 369 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+_closeloopf 13F 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+___ftadd@exp1 B4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__size_ofi1___aldiv 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_Adaptive_base_pid$1781 E4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_Adaptive_base_pid$1782 E7 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__end_ofi1___aldiv 3CE0 0 CODE 0 text43 dist/default/production\PULSEWF.X.production.obj
+_Adaptive_base_pid$1783 EA 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_gapfreq 23A 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+?i1___lwtoft 78 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+___fttol 3EF2 0 CODE 0 text26 dist/default/production\PULSEWF.X.production.obj
+_rec_arr 2A0 0 BANK5 1 bssBANK5 dist/default/production\PULSEWF.X.production.obj
+_ISR_Function$1186 7C 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+?___wmul A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_prevTORCH 16D 0 BANK2 1 dataBANK2 dist/default/production\PULSEWF.X.production.obj
+__Hcinit AAC 0 CODE 0 cinit -
+___ftmul 25A6 0 CODE 0 text28 dist/default/production\PULSEWF.X.production.obj
+__Lcinit 9A6 0 CODE 0 cinit -
+___aldiv 3CE0 0 CODE 0 text34 dist/default/production\PULSEWF.X.production.obj
+disp_hex_window22@hex_data A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_inchcnt 6D 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+___ftdiv 2190 0 CODE 0 text30 dist/default/production\PULSEWF.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+___lwdiv 1004 0 CODE 0 text13 dist/default/production\PULSEWF.X.production.obj
+__Lspace_3 0 0 ABS 0 - -
+_send_statusf 15D 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_Display AAC 0 CODE 0 text45 dist/default/production\PULSEWF.X.production.obj
+_Delayms 32CE 0 CODE 0 text23 dist/default/production\PULSEWF.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1___ftpack@arg 70 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+_prevkey 16E 0 BANK2 1 dataBANK2 dist/default/production\PULSEWF.X.production.obj
+_parclength 25F 0 BANK4 1 dataBANK4 dist/default/production\PULSEWF.X.production.obj
+_openloopcnt 240 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+__end_of_key_application F76 0 CODE 0 text7 dist/default/production\PULSEWF.X.production.obj
+_minus111 14C 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1___aldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+_softstartf 1D5 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_minus222 14D 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__end_of_detect_display_error 243E 0 CODE 0 text14 dist/default/production\PULSEWF.X.production.obj
+i1___ftmul@cntr 2E 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+___fttol@exp1 D2 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__size_of___ftdiv 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__pidataBANK0 FFC 0 CODE 0 idataBANK0 dist/default/production\PULSEWF.X.production.obj
+_Actual_vtg 25B 0 BANK4 1 dataBANK4 dist/default/production\PULSEWF.X.production.obj
+_pluspara1 156 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_Actual_amp 1E5 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+___altoft@sign AF 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_pluspara2 157 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+i1___ftdiv@cntr 2A 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+clear_ram0 314A 0 CODE 0 clrtext dist/default/production\PULSEWF.X.production.obj
+___ftpack@arg A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_Total_Count 1AC 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_cyclestrtf 144 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_lookup_table 4000 0 STRCODE 0 stringtext dist/default/production\PULSEWF.X.production.obj
+i1___ftadd@exp2 3B 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+_count_1msec 141 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_lookup_table 40B0 0 STRCODE 0 stringtext dist/default/production\PULSEWF.X.production.obj
+___ftadd@exp2 B3 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_portpin_init 329C 0 CODE 0 text6 dist/default/production\PULSEWF.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 -
+__pbssBANK0 54 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 -
+i1___ftmul@exp 2A 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hbank20 0 0 ABS 0 bank20 -
+__Lbank20 0 0 ABS 0 bank20 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Hbank21 0 0 ABS 0 bank21 -
+__Lbank21 0 0 ABS 0 bank21 -
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank12 0 0 ABS 0 bank12 -
+_adaptivepidf 137 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__Hbank22 0 0 ABS 0 bank22 -
+__Lbank22 0 0 ABS 0 bank22 -
+__Hbank13 0 0 ABS 0 bank13 -
+__Lbank13 0 0 ABS 0 bank13 -
+__Hbank23 0 0 ABS 0 bank23 -
+__Lbank23 0 0 ABS 0 bank23 -
+i1___ftdiv@exp 2E 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hbank14 0 0 ABS 0 bank14 -
+__Lbank14 0 0 ABS 0 bank14 -
+__Hstringtext 0 0 ABS 0 stringtext -
+__Lstringtext 0 0 ABS 0 stringtext -
+__Hbank24 0 0 ABS 0 bank24 -
+__Lbank24 0 0 ABS 0 bank24 -
+__pstringtext 4000 0 STRCODE 0 stringtext dist/default/production\PULSEWF.X.production.obj
+__ptext10 4 0 CODE 0 text10 dist/default/production\PULSEWF.X.production.obj
+__Hbank15 0 0 ABS 0 bank15 -
+__Lbank15 0 0 ABS 0 bank15 -
+_universal_error 162 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__ptext20 3ADE 0 CODE 0 text20 dist/default/production\PULSEWF.X.production.obj
+__Hbank25 0 0 ABS 0 bank25 -
+__Lbank25 0 0 ABS 0 bank25 -
+__ptext11 384E 0 CODE 0 text11 dist/default/production\PULSEWF.X.production.obj
+__ptext30 2190 0 CODE 0 text30 dist/default/production\PULSEWF.X.production.obj
+__Hbank16 0 0 ABS 0 bank16 -
+__Lbank16 0 0 ABS 0 bank16 -
+__ptext21 360E 0 CODE 0 text21 dist/default/production\PULSEWF.X.production.obj
+__ptext40 203E 0 CODE 0 text40 dist/default/production\PULSEWF.X.production.obj
+__Hbank26 0 0 BANK26 1 bank26 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__ptext12 3370 0 CODE 0 text12 dist/default/production\PULSEWF.X.production.obj
+__ptext31 1072 0 CODE 0 text31 dist/default/production\PULSEWF.X.production.obj
+__Hbank17 0 0 ABS 0 bank17 -
+__Lbank17 0 0 ABS 0 bank17 -
+_mahesh_test 25D 0 BANK4 1 dataBANK4 dist/default/production\PULSEWF.X.production.obj
+_count_transms 22A 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__ptext22 329C 0 CODE 0 text22 dist/default/production\PULSEWF.X.production.obj
+__ptext41 270E 0 CODE 0 text41 dist/default/production\PULSEWF.X.production.obj
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__Hbank27 0 0 BANK27 1 bank27 -
+?i1___fttol 3D 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__Lbank27 0 0 BANK27 1 bank27 -
+_firstpulse1 147 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__ptext13 1004 0 CODE 0 text13 dist/default/production\PULSEWF.X.production.obj
+__ptext32 F76 0 CODE 0 text32 dist/default/production\PULSEWF.X.production.obj
+__Hbank18 0 0 ABS 0 bank18 -
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__Lbank18 0 0 ABS 0 bank18 -
+__ptext23 32CE 0 CODE 0 text23 dist/default/production\PULSEWF.X.production.obj
+__ptext42 36CC 0 CODE 0 text42 dist/default/production\PULSEWF.X.production.obj
+__Hbank28 0 0 BANK28 1 bank28 -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__ptext14 22E2 0 CODE 0 text14 dist/default/production\PULSEWF.X.production.obj
+__ptext33 378C 0 CODE 0 text33 dist/default/production\PULSEWF.X.production.obj
+__Hbank19 0 0 ABS 0 bank19 -
+__Lbank19 0 0 ABS 0 bank19 -
+__pidataBANK1 FFE 0 CODE 0 idataBANK1 dist/default/production\PULSEWF.X.production.obj
+__ptext24 28FA 0 CODE 0 text24 dist/default/production\PULSEWF.X.production.obj
+__ptext43 3BDC 0 CODE 0 text43 dist/default/production\PULSEWF.X.production.obj
+__Hbank29 0 0 BANK29 1 bank29 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__ptext15 3184 0 CODE 0 text15 dist/default/production\PULSEWF.X.production.obj
+__ptext34 3CE0 0 CODE 0 text34 dist/default/production\PULSEWF.X.production.obj
+__ptext25 2002 0 CODE 0 text25 dist/default/production\PULSEWF.X.production.obj
+__ptext44 331E 0 CODE 0 text44 dist/default/production\PULSEWF.X.production.obj
+__ptext16 31F2 0 CODE 0 text16 dist/default/production\PULSEWF.X.production.obj
+__ptext35 33CE 0 CODE 0 text35 dist/default/production\PULSEWF.X.production.obj
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+__ptext26 3EF2 0 CODE 0 text26 dist/default/production\PULSEWF.X.production.obj
+__ptext45 AAC 0 CODE 0 text45 dist/default/production\PULSEWF.X.production.obj
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__size_of_enc1_port 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__ptext17 3162 0 CODE 0 text17 dist/default/production\PULSEWF.X.production.obj
+__pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__end_of_SCANENCODER1 3BDC 0 CODE 0 text20 dist/default/production\PULSEWF.X.production.obj
+__end_of_SCANENCODER2 3ADE 0 CODE 0 text18 dist/default/production\PULSEWF.X.production.obj
+__end_of___lwmod 33CE 0 CODE 0 text12 dist/default/production\PULSEWF.X.production.obj
+__ptext27 30F8 0 CODE 0 text27 dist/default/production\PULSEWF.X.production.obj
+?i1___ftmul 20 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+___lwmod@divisor A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_creep_speed 143 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__ptext18 39E2 0 CODE 0 text18 dist/default/production\PULSEWF.X.production.obj
+__ptext37 31A6 0 CODE 0 text37 dist/default/production\PULSEWF.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__ptext28 25A6 0 CODE 0 text28 dist/default/production\PULSEWF.X.production.obj
+___fttol@sign1 CD 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__ptext19 3554 0 CODE 0 text19 dist/default/production\PULSEWF.X.production.obj
+__ptext38 3DE4 0 CODE 0 text38 dist/default/production\PULSEWF.X.production.obj
+?i1___aldiv 70 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+__ptext29 3430 0 CODE 0 text29 dist/default/production\PULSEWF.X.production.obj
+__ptext39 243E 0 CODE 0 text39 dist/default/production\PULSEWF.X.production.obj
+_startptr1 65 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+_OSCCONbits 99 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__HbssBANK4 0 0 ABS 0 bssBANK4 -
+__LbssBANK4 0 0 ABS 0 bssBANK4 -
+_INTCONbits B 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_Send_Byte 311E 0 CODE 0 text5 dist/default/production\PULSEWF.X.production.obj
+_firstpulse2 148 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__pbssBANK4 220 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+__Hend_init 9A6 0 CODE 0 end_init -
+__Lend_init 9A2 0 CODE 0 end_init -
+_SCANENCODER1 3ADE 0 CODE 0 text20 dist/default/production\PULSEWF.X.production.obj
+__pswtext1 3000 0 CONST 0 swtext1 dist/default/production\PULSEWF.X.production.obj
+___aldiv@divisor A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+___ftpack@exp A3 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+___lwdiv@divisor A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__HbssBANK5 0 0 ABS 0 bssBANK5 -
+__LbssBANK5 0 0 ABS 0 bssBANK5 -
+?i1___ftdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__pbssBANK5 2A0 0 BANK5 1 bssBANK5 dist/default/production\PULSEWF.X.production.obj
+_integral_old 1A3 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__end_of___ftmul 270E 0 CODE 0 text28 dist/default/production\PULSEWF.X.production.obj
+_prevFltpfreq 242 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+i1___lwtoft 31A6 0 CODE 0 text37 dist/default/production\PULSEWF.X.production.obj
+__HbssBANK6 0 0 ABS 0 bssBANK6 -
+__LbssBANK6 0 0 ABS 0 bssBANK6 -
+__size_of___wmul 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_Displayarr 40B0 0 STRCODE 0 stringtext dist/default/production\PULSEWF.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__pbssBANK6 320 0 BANK6 1 bssBANK6 dist/default/production\PULSEWF.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+i1Update_PWM@Temp1 74 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+__HidataBANK2 0 0 ABS 0 idataBANK2 -
+__LidataBANK2 0 0 ABS 0 idataBANK2 -
+__size_ofi1___ftadd 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_ofi1___fttol 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_ofi1___ftmul 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_ofi1___ftdiv 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__pidataBANK2 30F0 0 CODE 0 idataBANK2 dist/default/production\PULSEWF.X.production.obj
+disp_hex_window1@hex_data A8 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_cGasRlyClrfg 13A 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_read_enc1f 159 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_Hi_setppwm 1A6 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_delinch1 1B4 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__end_of_Display D32 0 CODE 0 text45 dist/default/production\PULSEWF.X.production.obj
+_Lo_setppwm 1A8 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+__size_ofi1___ftpack 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_of___aldiv 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_closeloop1f 1CE 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+Update_PWM@setwsduty D3 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_setcurrent 12E 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+_send_status 321C 0 CODE 0 text4 dist/default/production\PULSEWF.X.production.obj
+_ISR_Function 8 0 CODE 0 intentry dist/default/production\PULSEWF.X.production.obj
+Update_PWM@Dutycnt D9 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+_universal_error_latch 163 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_Displayarr 40DC 0 STRCODE 0 stringtext dist/default/production\PULSEWF.X.production.obj
+_portbstatus 63 0 BANK0 1 bssBANK0 dist/default/production\PULSEWF.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+_recpsstatus 1C4 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+___altoft@exp AE 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+intlevel2 0 0 CODE 0 functab C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+__size_of_capture_init 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_SCANENCODER2 39E2 0 CODE 0 text18 dist/default/production\PULSEWF.X.production.obj
+intlevel3 0 0 CODE 0 functab C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+intlevel4 0 0 CODE 0 functab C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+__CFG_LPBOR$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\DOCUME~1\admin1\LOCALS~1\Temp\s3dc.obj
+key_application@keypress DD 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_disparclength 238 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+_Total_Period 220 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__HidataBANK3 0 0 ABS 0 idataBANK3 -
+__LidataBANK3 0 0 ABS 0 idataBANK3 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pidataBANK3 3246 0 CODE 0 idataBANK3 dist/default/production\PULSEWF.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+__end_of___wmul 203E 0 CODE 0 text25 dist/default/production\PULSEWF.X.production.obj
+_dispupdatef 6F 0 BANK0 1 dataBANK0 dist/default/production\PULSEWF.X.production.obj
+start_initialization 9A6 0 CODE 0 cinit dist/default/production\PULSEWF.X.production.obj
+__end_of___altoft FF0 0 CODE 0 text32 dist/default/production\PULSEWF.X.production.obj
+___aldiv@quotient AB 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_scalefactor2 1EB 0 BANK3 1 dataBANK3 dist/default/production\PULSEWF.X.production.obj
+__size_of_enc2_port 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_capture_init 31A6 0 CODE 0 text15 dist/default/production\PULSEWF.X.production.obj
+___lwdiv@quotient A5 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+disp_hex_window11@hex_data A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__size_of___ftge 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+i1___aldiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__pmaintext 125E 0 CODE 0 maintext dist/default/production\PULSEWF.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of___fttol 4000 0 CODE 0 text26 dist/default/production\PULSEWF.X.production.obj
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_of_disp_hex_window1 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Hinittext 0 0 ABS 0 inittext -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__Linittext 0 0 ABS 0 inittext -
+i1___ftmul@f3_as_product 2B 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__size_of_disp_hex_window2 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+?i1___ftpack 70 0 COMMON 1 cstackCOMMON dist/default/production\PULSEWF.X.production.obj
+__initialization 9A6 0 CODE 0 cinit dist/default/production\PULSEWF.X.production.obj
+__end_of___ftge 34A8 0 CODE 0 text29 dist/default/production\PULSEWF.X.production.obj
+__size_ofi1___lwtoft 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+_capintervalf 1CD 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_fixintervalf 1D3 0 BANK3 1 bssBANK3 dist/default/production\PULSEWF.X.production.obj
+_pstowfstru 244 0 BANK4 1 bssBANK4 dist/default/production\PULSEWF.X.production.obj
+___lwmod@dividend A2 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+i1___fttol@sign1 45 0 BANK0 1 cstackBANK0 dist/default/production\PULSEWF.X.production.obj
+__end_of_disp_hex_window11 6 0 CODE 0 text10 dist/default/production\PULSEWF.X.production.obj
+__HidataBANK4 0 0 ABS 0 idataBANK4 -
+___wmul@product A4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__LidataBANK4 0 0 ABS 0 idataBANK4 -
+___lwmod@counter A5 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__pidataBANK4 FF0 0 CODE 0 idataBANK4 dist/default/production\PULSEWF.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__end_of_transmittops 3554 0 CODE 0 text2 dist/default/production\PULSEWF.X.production.obj
+__size_of_disp_hex_window11 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+__size_of_portpin_init 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+Delayms@xxx A2 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+__end_of_disp_hex_window22 8 0 CODE 0 text9 dist/default/production\PULSEWF.X.production.obj
+__end_of___ftdiv 22E2 0 CODE 0 text30 dist/default/production\PULSEWF.X.production.obj
+Delayms@delay A0 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+_minuscount1 14E 0 BANK2 1 bssBANK2 dist/default/production\PULSEWF.X.production.obj
+__size_of_Adaptive_base_pid 0 0 ABS 0 - dist/default/production\PULSEWF.X.production.obj
+___aldiv@dividend A4 0 BANK1 1 cstackBANK1 dist/default/production\PULSEWF.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 CA0 20
+- 1 C36 3A
+_pidParams2 1 2796 0
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2
+intentry 0 4 8 7FC 2
+config 0 8007 1000E 2 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK1 1 A0 A0 50 1
+bssBANK2 1 120 120 50 1
+bssBANK6 1 320 320 49 1
+bssBANK4 1 220 220 41 1
+bssBANK3 1 1A0 1A0 4F 1
+cstackBANK0 1 20 20 50 1
+bssBANK5 1 2A0 2A0 16 1
+maintext 0 92F 125E 6D1 2
+text24 0 147D 28FA 383 2
+text31 0 839 1072 F6 2
+text41 0 1387 270E F6 2
+text28 0 12D3 25A6 B4 2
+text39 0 121F 243E B4 2
+text14 0 1171 22E2 AE 2
+text30 0 10C8 2190 A9 2
+text40 0 101F 203E A9 2
+text26 0 1F79 3EF2 87 2
+text38 0 1EF2 3DE4 87 2
+text34 0 1E70 3CE0 82 2
+text43 0 1DEE 3BDC 82 2
+text20 0 1D6F 3ADE 7F 2
+text18 0 1CF1 39E2 7E 2
+stringtext 0 2000 4000 6E 2
+text8 0 1C8B 3916 66 2
+text11 0 1C27 384E 64 2
+text33 0 1BC6 378C 61 2
+text42 0 1B66 36CC 60 2
+text21 0 1B07 360E 5F 2
+text19 0 1AAA 3554 5D 2
+text2 0 1A54 34A8 56 2
+text29 0 1A18 3430 3C 2
+text13 0 802 1004 37 2
+text35 0 19E7 33CE 31 2
+text12 0 19B8 3370 2F 2
+text44 0 198F 331E 29 2
+text23 0 1967 32CE 28 2
+text25 0 1001 2002 1E 2
+text22 0 194E 329C 19 2
+text6 0 1938 3270 16 2
+idataBANK3 0 1923 3246 15 2
+text4 0 190E 321C 15 2
+text16 0 18F9 31F2 15 2
+text1 0 18E6 31CC 13 2
+text37 0 18D3 31A6 13 2
+text15 0 18C2 3184 11 2
+text17 0 18B1 3162 11 2
+clrtext 0 18A5 314A C 2
+inittext 0 1899 3132 C 2
+swtext1 0 1800 3000 C 2
+text3 0 188F 311E A 2
+text5 0 1885 310A A 2
+text27 0 187C 30F8 9 2
+idataBANK2 0 1878 30F0 4 2
+text9 0 3 6 1 2

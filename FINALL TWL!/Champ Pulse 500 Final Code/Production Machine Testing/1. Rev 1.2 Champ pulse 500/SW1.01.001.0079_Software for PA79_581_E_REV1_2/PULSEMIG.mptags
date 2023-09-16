@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADC_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1437;"	f	line:1437	signature:(void)
+BORV_27	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	59;"	v	line:59
+BuffAddr	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	64;"	l	line:64
+CODE_PROT_ON	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	58;"	v	line:58
+Detect_error	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1952;"	f	line:1952	signature:(void)
+FRC_PLL16	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	56;"	v	line:56
+INT12_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1783;"	f	line:1783	signature:(void)
+PORTPIN_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1521;"	f	line:1521
+PWM_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1406;"	f	line:1406	signature:(void)
+READ_PORTPIN	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1284;"	f	line:1284	signature:(void)
+SPI_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1326;"	f	line:1326	signature:(void)
+SYSTEM_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1251;"	f	line:1251
+Send_num	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1509;"	f	line:1509	signature:(unsigned int num)
+TIMER1_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1350;"	f	line:1350	signature:(void)
+TIMER2_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1361;"	f	line:1361	signature:(void)
+TIMER3_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1374;"	f	line:1374	signature:(void)
+TIMER4_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1385;"	f	line:1385	signature:(void)
+TIMER5_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1395;"	f	line:1395	signature:(void)
+TRANS1	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1478;"	f	line:1478	signature:(unsigned char data)
+TRANS2	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1503;"	f	line:1503	signature:(unsigned char data)
+TRANSNUM	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1484;"	f	line:1484	signature:(unsigned int num)
+UART1_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1469;"	f	line:1469
+UART2_INIT	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1493;"	f	line:1493
+WDT_OFF	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	57;"	v	line:57
+delay_pmig	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1068;"	f	line:1068
+display_Ldata	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1850;"	f	line:1850
+higher	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1486;"	l	line:1486
+higher	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1511;"	l	line:1511
+i	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1070;"	l	line:1070
+iData	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	63;"	l	line:63
+index	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	2133;"	l	line:2133
+lower	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1486;"	l	line:1486
+lower	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1511;"	l	line:1511
+main	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	61;"	f	line:61
+send_string	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	2131;"	f	line:2131	signature:(unsigned char data[])
+transmittowf	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1707;"	f	line:1707
+trip_detection	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1893;"	f	line:1893	signature:(unsigned int looperrorvtg)
+updatedata	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1160;"	f	line:1160	signature:(unsigned int operator1,unsigned int minimum,unsigned int maximum,unsigned char sign)
+updatedata1	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1223;"	f	line:1223	signature:(unsigned int operator1,unsigned int minimum,unsigned int maximum,unsigned char sign)
+updategcvparameter	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1102;"	f	line:1102	signature:(unsigned char encres3, unsigned char encres2)
+updatemccparameter	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1076;"	f	line:1076	signature:(unsigned char encres3, unsigned char encres2)
+updatemigparameter	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1148;"	f	line:1148	signature:(unsigned char encres1)
+updatepccparameter	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1131;"	f	line:1131	signature:(unsigned char encres3, unsigned char encres2)
+updatepmigparameter	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1152;"	f	line:1152	signature:(unsigned char encres1)
+updatetccparameter	D:\MAYURI KALE\Champ 500 AI\1. Rev 1.2 Champ pulse 500\SW1.01.001.0079_Software for PA79_581_E_REV1_2\MAIN.C	1093;"	f	line:1093	signature:(unsigned char encres3, unsigned char encres2)

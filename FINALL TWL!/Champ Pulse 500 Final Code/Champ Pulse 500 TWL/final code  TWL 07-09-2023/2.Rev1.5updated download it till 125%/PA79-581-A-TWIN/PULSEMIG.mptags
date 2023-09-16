@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADC_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1465;"	f	line:1465	signature:(void)
+BORV_27	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	58;"	v	line:58
+BuffAddr	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	63;"	l	line:63
+CODE_PROT_ON	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	57;"	v	line:57
+Detect_error	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1779;"	f	line:1779	signature:(void)
+FRC_PLL16	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	55;"	v	line:55
+INT12_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1708;"	f	line:1708	signature:(void)
+LCD_mig_syn_data_write	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1839;"	f	line:1839
+LCD_pulsemig_syn_data_write	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1784;"	f	line:1784
+PORTPIN_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1549;"	f	line:1549
+PWM_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1434;"	f	line:1434	signature:(void)
+READ_PORTPIN	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1312;"	f	line:1312	signature:(void)
+SPI_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1354;"	f	line:1354	signature:(void)
+SYSTEM_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1279;"	f	line:1279
+Send_num	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1537;"	f	line:1537	signature:(unsigned int num)
+TIMER1_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1378;"	f	line:1378	signature:(void)
+TIMER2_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1389;"	f	line:1389	signature:(void)
+TIMER3_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1402;"	f	line:1402	signature:(void)
+TIMER4_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1413;"	f	line:1413	signature:(void)
+TIMER5_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1423;"	f	line:1423	signature:(void)
+TRANS1	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1506;"	f	line:1506	signature:(unsigned char data)
+TRANS2	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1531;"	f	line:1531	signature:(unsigned char data)
+TRANSNUM	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1512;"	f	line:1512	signature:(unsigned int num)
+UART1_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1497;"	f	line:1497
+UART2_INIT	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1521;"	f	line:1521
+WDT_OFF	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	56;"	v	line:56
+delay_pmig	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1096;"	f	line:1096
+display_Ldata	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1727;"	f	line:1727
+higher	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1514;"	l	line:1514
+higher	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1539;"	l	line:1539
+i	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1098;"	l	line:1098
+iData	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	62;"	l	line:62
+index	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1885;"	l	line:1885
+lower	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1514;"	l	line:1514
+lower	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1539;"	l	line:1539
+main	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	60;"	f	line:60
+send_string	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1883;"	f	line:1883	signature:(unsigned char data[])
+transmittowf	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1669;"	f	line:1669
+trip_detection	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1770;"	f	line:1770	signature:(unsigned int looperrorvtg)
+updatedata	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1188;"	f	line:1188	signature:(unsigned int operator1,unsigned int minimum,unsigned int maximum,unsigned char sign)
+updatedata1	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1251;"	f	line:1251	signature:(unsigned int operator1,unsigned int minimum,unsigned int maximum,unsigned char sign)
+updategcvparameter	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1130;"	f	line:1130	signature:(unsigned char encres3, unsigned char encres2)
+updatemccparameter	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1104;"	f	line:1104	signature:(unsigned char encres3, unsigned char encres2)
+updatemigparameter	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1176;"	f	line:1176	signature:(unsigned char encres1)
+updatepccparameter	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1159;"	f	line:1159	signature:(unsigned char encres3, unsigned char encres2)
+updatepmigparameter	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1180;"	f	line:1180	signature:(unsigned char encres1)
+updatetccparameter	D:\Abhijeet\TWL(ROOT-NORMAL)\Updated Display Board Code\2.Rev1.5updated download it till 125%\PA79-581-A-TWIN\MAIN.C	1121;"	f	line:1121	signature:(unsigned char encres3, unsigned char encres2)
